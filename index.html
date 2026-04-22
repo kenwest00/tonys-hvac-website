@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tony's HVAC & Handyman | Atlanta's Most Affordable Expert | Free Replacement Assessment</title>
+<meta name="description" content="Tony Murphy — active HVAC instructor, 10+ years Atlanta metro. Free replacement assessment. Routinely saves customers 50–70% vs competitors. Call 770-292-8989.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0D1B2A;
+  --steel: #1B3A6B;
+  --orange: #E85D20;
+  --amber: #F5A623;
+  --cream: #F7F3EE;
+  --warm-gray: #E8E3DC;
+  --text: #1A1A1A;
+  --muted: #6B6460;
+  --white: #FFFFFF;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Outfit', sans-serif;
+  color: var(--text);
+  background: var(--white);
+  overflow-x: hidden;
+}
+
+/* ── NAV ────────────────────────────────────── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw;
+  height: 68px;
+  border-bottom: 3px solid var(--orange);
+}
+
+.nav-logo {
+  display: flex; flex-direction: column; line-height: 1;
+}
+.nav-logo-top {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px; color: var(--white); letter-spacing: 1px;
+}
+.nav-logo-sub {
+  font-size: 10px; color: var(--amber); letter-spacing: 2px; text-transform: uppercase;
+}
+
+.nav-right {
+  display: flex; align-items: center; gap: 12px;
+}
+
+.nav-call {
+  display: flex; flex-direction: column; align-items: flex-end;
+  text-decoration: none;
+}
+.nav-call-label { font-size: 10px; color: var(--amber); letter-spacing: 1px; text-transform: uppercase; }
+.nav-call-number {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px; color: var(--white); letter-spacing: 1px;
+}
+
+.nav-cta {
+  background: var(--orange);
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600; font-size: 13px;
+  text-decoration: none;
+  padding: 10px 18px;
+  border: none; cursor: pointer;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+.nav-cta:hover { background: #c94d16; }
+
+/* ── HERO ───────────────────────────────────── */
+.hero {
+  padding-top: 68px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-left {
+  background: var(--navy);
+  padding: 80px 5vw 80px 6vw;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative;
+}
+
+.hero-left::after {
+  content: '';
+  position: absolute; right: -40px; top: 0; bottom: 0;
+  width: 80px;
+  background: var(--navy);
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+  z-index: 2;
+}
+
+.hero-emergency-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  padding: 6px 14px;
+  margin-bottom: 24px;
+  width: fit-content;
+}
+.badge-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--white);
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.hero-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(52px, 6vw, 86px);
+  line-height: 0.95;
+  color: var(--white);
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.hero-headline span { color: var(--orange); }
+
+.hero-sub {
+  font-size: 17px; color: rgba(255,255,255,0.75);
+  line-height: 1.6; margin-bottom: 36px;
+  max-width: 420px;
+}
+
+.hero-cta-group {
+  display: flex; flex-direction: column; gap: 12px;
+  align-items: flex-start;
+}
+
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: var(--orange);
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700; font-size: 16px;
+  text-decoration: none;
+  padding: 18px 32px;
+  transition: all 0.15s;
+  letter-spacing: 0.3px;
+}
+.btn-primary:hover { background: #c94d16; transform: translateX(3px); }
+.btn-primary svg { flex-shrink: 0; }
+
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: transparent;
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600; font-size: 15px;
+  text-decoration: none;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+  transition: all 0.15s;
+  letter-spacing: 0.3px;
+}
+.btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
+
+.hero-right {
+  background: var(--cream);
+  padding: 80px 6vw 80px 8vw;
+  display: flex; flex-direction: column; justify-content: center;
+  position: relative;
+}
+
+.hero-right-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--steel);
+  margin-bottom: 20px;
+}
+
+.hero-comparison {
+  margin-bottom: 32px;
+}
+
+.comparison-label {
+  font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 4px;
+}
+
+.comparison-their-quote {
+  display: flex; align-items: baseline; gap: 8px;
+  text-decoration: line-through; color: #c0392b;
+  margin-bottom: 4px;
+}
+.comparison-their-quote .big-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 58px; line-height: 1;
+}
+.comparison-their-quote .sup { font-size: 24px; font-weight: 700; margin-top: 8px; }
+
+.comparison-divider {
+  display: flex; align-items: center; gap: 12px;
+  margin: 12px 0;
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--muted);
+}
+.comparison-divider::before, .comparison-divider::after {
+  content: ''; flex: 1; height: 1px; background: var(--warm-gray);
+}
+
+.comparison-tony-quote {
+  display: flex; align-items: baseline; gap: 8px;
+  color: var(--orange);
+}
+.comparison-tony-quote .big-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 82px; line-height: 1;
+}
+.comparison-tony-quote .sup { font-size: 30px; font-weight: 700; margin-top: 12px; }
+
+.comparison-same {
+  display: inline-block;
+  background: var(--navy);
+  color: var(--white);
+  font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  padding: 5px 12px; margin-top: 8px;
+}
+
+.free-assess-card {
+  background: var(--navy);
+  color: var(--white);
+  padding: 24px 28px;
+  display: flex; align-items: flex-start; gap: 16px;
+  margin-bottom: 28px;
+}
+.free-assess-icon {
+  width: 44px; height: 44px; flex-shrink: 0;
+  background: var(--orange);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px;
+}
+.free-assess-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px; color: var(--amber); letter-spacing: 1px;
+  line-height: 1;
+}
+.free-assess-body {
+  font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 4px; line-height: 1.5;
+}
+
+/* ── TRUST BAR ──────────────────────────────── */
+.trust-bar {
+  background: var(--steel);
+  padding: 20px 5vw;
+  display: flex; align-items: center; justify-content: center;
+  gap: 0; flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 28px;
+  border-right: 1px solid rgba(255,255,255,0.15);
+}
+.trust-item:last-child { border-right: none; }
+
+.trust-icon { font-size: 18px; }
+
+.trust-text {
+  font-size: 13px; font-weight: 600; color: var(--white);
+  letter-spacing: 0.3px;
+}
+
+/* ── ABOUT TONY ─────────────────────────────── */
+.about {
+  padding: 100px 5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1300px; margin: 0 auto;
+}
+
+.about-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: var(--orange); margin-bottom: 16px;
+}
+
+.about-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(42px, 4vw, 64px);
+  line-height: 1;
+  color: var(--navy);
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+.about-headline em {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  color: var(--orange);
+}
+
+.about-body {
+  font-size: 16px; color: var(--muted); line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.about-quote {
+  border-left: 4px solid var(--orange);
+  padding: 16px 24px;
+  background: var(--cream);
+  margin: 28px 0;
+}
+.about-quote p {
+  font-family: 'DM Serif Display', serif;
+  font-size: 18px; color: var(--navy); line-height: 1.5; font-style: italic;
+}
+
+.about-stats {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 20px; margin-top: 32px;
+}
+
+.stat-card {
+  background: var(--cream);
+  padding: 24px 20px;
+  border-top: 3px solid var(--orange);
+}
+.stat-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px; line-height: 1;
+  color: var(--navy); letter-spacing: 1px;
+}
+.stat-label {
+  font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.4;
+}
+
+.about-visual {
+  position: relative;
+}
+
+.about-bg-block {
+  position: absolute;
+  top: -30px; right: -30px;
+  width: 70%; height: 70%;
+  background: var(--cream);
+  z-index: 0;
+}
+
+.about-photo-placeholder {
+  position: relative; z-index: 1;
+  background: var(--navy);
+  aspect-ratio: 4/5;
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-end;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.about-photo-placeholder::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: linear-gradient(135deg, #1B3A6B 0%, #0D1B2A 100%);
+}
+
+.photo-icon {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -60%);
+  font-size: 80px; opacity: 0.2;
+}
+
+.about-photo-badge {
+  position: relative; z-index: 1;
+  background: var(--orange);
+  color: var(--white);
+  padding: 16px 24px;
+  width: 100%;
+  text-align: center;
+}
+.about-photo-badge-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 22px; letter-spacing: 1px;
+}
+.about-photo-badge-sub {
+  font-size: 12px; opacity: 0.85; margin-top: 2px;
+}
+
+.instructor-badge {
+  position: absolute; top: 24px; left: -20px; z-index: 2;
+  background: var(--amber);
+  color: var(--navy);
+  padding: 12px 18px;
+  font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  transform: rotate(-2deg);
+  box-shadow: 3px 3px 0 var(--navy);
+}
+
+/* ── SERVICES ───────────────────────────────── */
+.services {
+  background: var(--navy);
+  padding: 100px 5vw;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section-label.light { color: var(--amber); }
+.section-label.dark { color: var(--orange); }
+
+.section-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(40px, 4vw, 64px);
+  line-height: 1; letter-spacing: 1px;
+}
+.section-headline.light { color: var(--white); }
+.section-headline.dark { color: var(--navy); }
+
+.section-sub {
+  font-size: 16px; line-height: 1.7;
+  max-width: 580px; margin: 16px auto 0;
+}
+.section-sub.light { color: rgba(255,255,255,0.65); }
+.section-sub.dark { color: var(--muted); }
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  max-width: 1300px; margin: 0 auto;
+}
+
+.service-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 36px 28px;
+  transition: all 0.2s;
+  cursor: default;
+  position: relative; overflow: hidden;
+}
+.service-card::before {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: var(--orange);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform 0.25s;
+}
+.service-card:hover { background: rgba(255,255,255,0.08); }
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-icon { font-size: 32px; margin-bottom: 20px; display: block; }
+
+.service-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px; color: var(--white); letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.service-desc {
+  font-size: 14px; color: rgba(255,255,255,0.6);
+  line-height: 1.65;
+}
+
+.service-cta {
+  display: inline-flex; align-items: center; gap: 6px;
+  color: var(--amber); font-size: 13px; font-weight: 600;
+  margin-top: 20px; text-decoration: none;
+  letter-spacing: 0.3px;
+  transition: gap 0.15s;
+}
+.service-cta:hover { gap: 10px; }
+
+.service-badge {
+  position: absolute; top: 16px; right: 16px;
+  background: var(--orange);
+  color: var(--white);
+  font-size: 9px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  padding: 4px 8px;
+}
+
+/* ── SAVINGS SECTION ────────────────────────── */
+.savings {
+  padding: 100px 5vw;
+  background: var(--cream);
+}
+
+.savings-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: center;
+}
+
+.savings-visual {
+  position: relative;
+}
+
+.quote-comparison {
+  display: flex; flex-direction: column; gap: 16px;
+}
+
+.quote-card {
+  padding: 28px 32px;
+  position: relative;
+}
+
+.quote-card.theirs {
+  background: var(--white);
+  border: 1px solid var(--warm-gray);
+  opacity: 0.7;
+}
+
+.quote-card.ours {
+  background: var(--navy);
+  border: 3px solid var(--orange);
+}
+
+.quote-who {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.quote-card.theirs .quote-who { color: var(--muted); }
+.quote-card.ours .quote-who { color: var(--amber); }
+
+.quote-amount {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 68px; line-height: 1; letter-spacing: 1px;
+  display: flex; align-items: flex-start; gap: 4px;
+}
+.quote-sup { font-size: 28px; margin-top: 10px; font-weight: 700; }
+.quote-card.theirs .quote-amount { color: #c0392b; text-decoration: line-through; }
+.quote-card.ours .quote-amount { color: var(--orange); }
+
+.quote-job {
+  font-size: 14px; margin-top: 6px;
+}
+.quote-card.theirs .quote-job { color: var(--muted); }
+.quote-card.ours .quote-job { color: rgba(255,255,255,0.65); }
+
+.quote-saved {
+  position: absolute; right: -16px; top: 50%;
+  transform: translateY(-50%);
+  background: var(--orange);
+  color: var(--white);
+  padding: 12px 14px;
+  text-align: center;
+  z-index: 2;
+}
+.quote-saved-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px; line-height: 1;
+}
+.quote-saved-label {
+  font-size: 9px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.savings-divider {
+  display: flex; align-items: center; justify-content: center;
+  padding: 8px 0; gap: 12px;
+}
+.s-div-line { flex: 1; height: 1px; background: var(--warm-gray); }
+.s-div-text {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: var(--muted);
+}
+
+.savings-content {}
+
+.savings-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(38px, 4vw, 58px);
+  line-height: 1; color: var(--navy); letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.savings-headline span { color: var(--orange); }
+
+.savings-body {
+  font-size: 16px; color: var(--muted); line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.why-list {
+  display: flex; flex-direction: column; gap: 16px;
+  margin: 28px 0;
+}
+
+.why-item {
+  display: flex; align-items: flex-start; gap: 16px;
+}
+
+.why-check {
+  width: 28px; height: 28px; flex-shrink: 0;
+  background: var(--orange);
+  display: flex; align-items: center; justify-content: center;
+  margin-top: 1px;
+}
+.why-check svg { width: 14px; height: 14px; }
+
+.why-text { font-size: 15px; color: var(--text); line-height: 1.55; }
+.why-text strong { font-weight: 600; color: var(--navy); }
+
+/* ── ASSESSMENT CTA ─────────────────────────── */
+.assessment-cta {
+  background: var(--orange);
+  padding: 80px 5vw;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+
+.assessment-cta::before {
+  content: 'FREE';
+  position: absolute; top: -20px; right: 5%;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 200px; color: rgba(255,255,255,0.07);
+  line-height: 1; pointer-events: none;
+}
+
+.assess-label {
+  font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  color: rgba(255,255,255,0.75); margin-bottom: 16px;
+}
+
+.assess-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(42px, 5vw, 80px);
+  line-height: 1; color: var(--white); letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.assess-sub {
+  font-size: 17px; color: rgba(255,255,255,0.85); line-height: 1.65;
+  max-width: 620px; margin: 0 auto 36px;
+}
+
+.assess-cards {
+  display: flex; align-items: center; justify-content: center; gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.assess-card {
+  background: rgba(0,0,0,0.2);
+  color: var(--white);
+  padding: 18px 24px;
+  text-align: center;
+  min-width: 160px;
+}
+.assess-card-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px; line-height: 1; color: var(--amber);
+}
+.assess-card-label {
+  font-size: 12px; opacity: 0.8; margin-top: 4px;
+}
+
+.assess-btn {
+  display: inline-flex; align-items: center; gap: 12px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700; font-size: 18px;
+  text-decoration: none;
+  padding: 22px 40px;
+  transition: all 0.15s;
+  letter-spacing: 0.3px;
+  margin: 0 8px;
+}
+.assess-btn:hover { background: #0a1520; transform: translateY(-2px); }
+
+.assess-btn.secondary-btn {
+  background: var(--white); color: var(--navy);
+}
+.assess-btn.secondary-btn:hover { background: var(--cream); }
+
+/* ── ACCOUNTABILITY ─────────────────────────── */
+.accountability {
+  padding: 100px 5vw;
+  background: var(--white);
+}
+
+.accountability-inner {
+  max-width: 1100px; margin: 0 auto;
+}
+
+.pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 60px;
+}
+
+.pillar-card {
+  padding: 40px 32px;
+  background: var(--cream);
+  border-top: 4px solid transparent;
+  transition: border-color 0.2s;
+  position: relative;
+}
+.pillar-card:nth-child(1) { border-color: var(--orange); }
+.pillar-card:nth-child(2) { border-color: var(--steel); }
+.pillar-card:nth-child(3) { border-color: var(--amber); }
+
+.pillar-icon { font-size: 36px; margin-bottom: 20px; display: block; }
+
+.pillar-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px; color: var(--navy); letter-spacing: 1px;
+  margin-bottom: 14px;
+}
+
+.pillar-body {
+  font-size: 15px; color: var(--muted); line-height: 1.7;
+}
+
+.pillar-detail {
+  font-size: 13px; color: var(--muted);
+  margin-top: 20px; padding-top: 20px;
+  border-top: 1px solid var(--warm-gray);
+  font-style: italic;
+}
+
+/* ── TESTIMONIALS ───────────────────────────── */
+.testimonials {
+  background: var(--navy);
+  padding: 100px 5vw;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1200px; margin: 60px auto 0;
+}
+
+.testimonial-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 32px 28px;
+  position: relative;
+}
+
+.testimonial-stars {
+  color: var(--amber); font-size: 14px; letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.testimonial-quote {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-size: 17px; color: var(--white); line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  display: flex; align-items: center; gap: 12px;
+}
+.author-avatar {
+  width: 40px; height: 40px; border-radius: 50%;
+  background: var(--steel);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 16px; color: var(--white);
+  flex-shrink: 0;
+}
+.author-name {
+  font-size: 14px; font-weight: 600; color: var(--white);
+}
+.author-detail { font-size: 12px; color: rgba(255,255,255,0.5); margin-top: 2px; }
+
+.testimonial-platform {
+  position: absolute; top: 20px; right: 20px;
+  font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
+  color: rgba(255,255,255,0.3);
+}
+
+/* ── INSTRUCTOR SECTION ─────────────────────── */
+.instructor {
+  padding: 100px 5vw;
+  background: var(--cream);
+}
+
+.instructor-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  gap: 80px; align-items: center;
+}
+
+.instructor-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(42px, 4vw, 64px);
+  line-height: 1; color: var(--navy); letter-spacing: 1px;
+  margin-bottom: 24px;
+}
+.instructor-headline span { color: var(--orange); }
+
+.instructor-body {
+  font-size: 16px; color: var(--muted); line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.credential-list {
+  display: flex; flex-direction: column; gap: 12px;
+  margin-top: 28px;
+}
+
+.credential-item {
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px 18px;
+  background: var(--white);
+  border-left: 4px solid var(--navy);
+}
+.credential-item:nth-child(2) { border-color: var(--orange); }
+.credential-item:nth-child(3) { border-color: var(--amber); }
+
+.credential-text {
+  font-size: 15px; font-weight: 600; color: var(--navy);
+}
+.credential-sub {
+  font-size: 12px; color: var(--muted); margin-top: 2px;
+}
+
+.instructor-visual {
+  background: var(--navy);
+  padding: 48px 40px;
+  position: relative;
+}
+
+.instructor-visual::before {
+  content: '';
+  position: absolute; top: -12px; right: -12px;
+  width: 100%; height: 100%;
+  border: 2px solid var(--orange);
+  z-index: 0;
+}
+
+.instructor-quote {
+  position: relative; z-index: 1;
+}
+
+.instructor-quote-mark {
+  font-family: 'DM Serif Display', serif;
+  font-size: 100px; line-height: 0.7;
+  color: var(--orange); opacity: 0.4;
+  display: block; margin-bottom: 8px;
+}
+
+.instructor-quote-text {
+  font-family: 'DM Serif Display', serif;
+  font-style: italic;
+  font-size: 20px; color: var(--white); line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.instructor-quote-attr {
+  font-size: 13px; color: var(--amber); font-weight: 600;
+  letter-spacing: 1px; text-transform: uppercase;
+}
+
+/* ── FAQ ────────────────────────────────────── */
+.faq {
+  padding: 100px 5vw;
+  background: var(--white);
+}
+
+.faq-inner {
+  max-width: 780px; margin: 0 auto;
+}
+
+.faq-list {
+  display: flex; flex-direction: column; gap: 2px;
+  margin-top: 60px;
+}
+
+.faq-item {
+  border: 1px solid var(--warm-gray);
+  background: var(--white);
+}
+
+.faq-question {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px;
+  cursor: pointer;
+  font-size: 16px; font-weight: 600; color: var(--navy);
+  gap: 16px;
+  transition: background 0.15s;
+  user-select: none;
+}
+.faq-question:hover { background: var(--cream); }
+
+.faq-arrow {
+  width: 24px; height: 24px; flex-shrink: 0;
+  background: var(--cream);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.25s, background 0.15s;
+  font-size: 14px; color: var(--orange);
+}
+.faq-item.open .faq-arrow { transform: rotate(180deg); background: var(--orange); color: var(--white); }
+
+.faq-answer {
+  display: none;
+  padding: 0 24px 24px;
+  font-size: 15px; color: var(--muted); line-height: 1.75;
+  border-top: 1px solid var(--warm-gray);
+  padding-top: 20px;
+  background: var(--white);
+}
+.faq-item.open .faq-answer { display: block; }
+
+/* ── FINAL CTA ──────────────────────────────── */
+.final-cta {
+  background: var(--navy);
+  padding: 100px 5vw;
+  text-align: center;
+  position: relative; overflow: hidden;
+}
+
+.final-cta::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 40px,
+    rgba(255,255,255,0.01) 40px,
+    rgba(255,255,255,0.01) 80px
+  );
+}
+
+.final-cta-inner { position: relative; z-index: 1; }
+
+.final-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: clamp(48px, 6vw, 96px);
+  line-height: 1; color: var(--white); letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.final-headline span { color: var(--orange); }
+
+.final-sub {
+  font-size: 18px; color: rgba(255,255,255,0.7); line-height: 1.6;
+  max-width: 600px; margin: 0 auto 40px;
+}
+
+.final-cta-group {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.final-phone-block {
+  margin-top: 24px;
+}
+.final-phone-label {
+  font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.5); margin-bottom: 6px;
+}
+.final-phone-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px; color: var(--amber); letter-spacing: 2px;
+}
+.final-phone-num a { color: inherit; text-decoration: none; }
+.final-phone-num a:hover { color: var(--orange); }
+
+/* ── FOOTER ─────────────────────────────────── */
+footer {
+  background: #070f18;
+  padding: 48px 5vw 32px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footer-brand-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px; color: var(--white); letter-spacing: 1px;
+}
+.footer-brand-sub {
+  font-size: 12px; color: var(--amber); letter-spacing: 2px; text-transform: uppercase;
+  margin-top: 2px;
+}
+.footer-body {
+  font-size: 14px; color: rgba(255,255,255,0.45);
+  line-height: 1.7; margin-top: 16px;
+  max-width: 320px;
+}
+
+.footer-heading {
+  font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(255,255,255,0.35); margin-bottom: 16px;
+}
+.footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  text-decoration: none; font-size: 14px; color: rgba(255,255,255,0.6);
+  transition: color 0.15s;
+}
+.footer-links a:hover { color: var(--orange); }
+
+.footer-bottom {
+  background: #070f18;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 20px 5vw;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 12px; color: rgba(255,255,255,0.25);
+}
+
+/* ── SCROLL ANIMATIONS ──────────────────────── */
+.reveal {
+  opacity: 0; transform: translateY(28px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1; transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* ── FORM ───────────────────────────────────── */
+.form-section {
+  background: var(--cream);
+  padding: 80px 5vw;
+}
+.form-inner {
+  max-width: 700px; margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--warm-gray);
+  padding: 48px;
+  position: relative;
+}
+.form-inner::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 4px;
+  background: var(--orange);
+}
+.form-headline {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px; color: var(--navy); letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+.form-sub {
+  font-size: 15px; color: var(--muted); margin-bottom: 32px; line-height: 1.6;
+}
+.form-row {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+  margin-bottom: 16px;
+}
+.form-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.form-field label {
+  font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+  color: var(--muted);
+}
+.form-field input,
+.form-field select,
+.form-field textarea {
+  padding: 12px 16px;
+  border: 1.5px solid var(--warm-gray);
+  font-family: 'Outfit', sans-serif;
+  font-size: 15px; color: var(--text);
+  background: var(--white);
+  outline: none;
+  transition: border-color 0.15s;
+}
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus { border-color: var(--navy); }
+.form-field textarea { resize: vertical; }
+.form-submit {
+  width: 100%; padding: 18px;
+  background: var(--navy);
+  color: var(--white);
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700; font-size: 16px;
+  border: none; cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: background 0.15s;
+}
+.form-submit:hover { background: var(--steel); }
+.form-note {
+  font-size: 12px; color: var(--muted); text-align: center;
+  margin-top: 12px;
+}
+
+/* ── SEASONAL BAND ──────────────────────────── */
+.seasonal {
+  display: grid; grid-template-columns: 1fr 1fr;
+}
+.seasonal-half {
+  padding: 72px 5vw;
+  display: flex; flex-direction: column; justify-content: center;
+}
+.seasonal-half.summer { background: #E85D20; }
+.seasonal-half.winter { background: var(--steel); }
+.seasonal-icon { font-size: 40px; margin-bottom: 16px; }
+.seasonal-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 38px; color: var(--white); letter-spacing: 1px; margin-bottom: 12px;
+}
+.seasonal-body { font-size: 15px; color: rgba(255,255,255,0.8); line-height: 1.65; margin-bottom: 24px; }
+.seasonal-btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(255,255,255,0.15);
+  color: var(--white);
+  font-weight: 700; font-size: 14px;
+  text-decoration: none; padding: 14px 24px;
+  border: 1px solid rgba(255,255,255,0.3);
+  transition: background 0.15s;
+  width: fit-content;
+}
+.seasonal-btn:hover { background: rgba(255,255,255,0.25); }
+
+/* ── RESPONSIVE ─────────────────────────────── */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-left::after { display: none; }
+  .about, .savings-inner, .instructor-inner { grid-template-columns: 1fr; gap: 40px; }
+  .services-grid { grid-template-columns: 1fr 1fr; }
+  .pillars { grid-template-columns: 1fr; }
+  .testimonials-grid { grid-template-columns: 1fr; }
+  footer { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .seasonal { grid-template-columns: 1fr; }
+  .trust-bar { justify-content: flex-start; overflow-x: auto; }
+  .trust-item { white-space: nowrap; }
+  .about-visual { display: none; }
+  .hero-right { padding: 60px 6vw; }
+}
+
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .nav-cta { display: none; }
+  .assessment-cta::before { font-size: 120px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── NAV ──────────────────────────────────── -->
+<nav>
+  <div class="nav-logo">
+    <span class="nav-logo-top">Tony's HVAC & Handyman</span>
+    <span class="nav-logo-sub">Atlanta Metropolitan Area</span>
+  </div>
+  <div class="nav-right">
+    <a href="tel:7702928989" class="nav-call">
+      <span class="nav-call-label">Call or Text</span>
+      <span class="nav-call-number">770-292-8989</span>
+    </a>
+    <a href="#assessment" class="nav-cta">Free Replacement Assessment</a>
+  </div>
+</nav>
+
+<!-- ── HERO ─────────────────────────────────── -->
+<section class="hero">
+  <!-- Left: Emergency track -->
+  <div class="hero-left">
+    <div class="hero-emergency-badge">
+      <div class="badge-dot"></div>
+      Available for Service
+    </div>
+    <h1 class="hero-headline">
+      Atlanta's<br><span>HVAC Expert</span><br>Who Saves You<br>Thousands
+    </h1>
+    <p class="hero-sub">
+      Licensed technician. Active HVAC instructor. 10+ years serving metro Atlanta at prices your neighbors wish they'd found first.
+    </p>
+    <div class="hero-cta-group">
+      <a href="tel:7702928989" class="btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.65 3.49 2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call 770-292-8989 Now
+      </a>
+      <a href="#assessment" class="btn-secondary">
+        Get Your Free Replacement Assessment →
+      </a>
+    </div>
+  </div>
+
+  <!-- Right: Research/comparison track -->
+  <div class="hero-right">
+    <p class="hero-right-label">Real Customer Story — Full AC System Replacement</p>
+
+    <div class="hero-comparison">
+      <div class="comparison-label">Competitor Quote</div>
+      <div class="comparison-their-quote">
+        <span class="sup">$</span>
+        <span class="big-num">32,000</span>
+      </div>
+
+      <div class="comparison-divider">
+        <span></span>
+        Same job. Same system.
+        <span></span>
+      </div>
+
+      <div class="comparison-label" style="color: var(--orange);">Tony's Quote</div>
+      <div class="comparison-tony-quote">
+        <span class="sup">$</span>
+        <span class="big-num">7,500</span>
+      </div>
+      <span class="comparison-same">Same Scope. Labor Warranty Included.</span>
+    </div>
+
+    <div class="free-assess-card">
+      <div class="free-assess-icon">✓</div>
+      <div>
+        <div class="free-assess-title">Free Replacement Assessment</div>
+        <div class="free-assess-body">Tony will evaluate your system at no charge and give you a straight answer — repair, maintain, or replace — with no sales pressure.</div>
+      </div>
+    </div>
+
+    <a href="#form" class="btn-primary" style="background: var(--navy);">
+      Book Your Free Assessment →
+    </a>
+  </div>
+</section>
+
+<!-- ── TRUST BAR ──────────────────────────────── -->
+<div class="trust-bar">
+  <div class="trust-item">
+    <span class="trust-icon">🎓</span>
+    <span class="trust-text">Active HVAC Instructor</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">🛡️</span>
+    <span class="trust-text">Labor Warranty on Every Job</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">🔧</span>
+    <span class="trust-text">HVAC + Handyman in One Visit</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">📋</span>
+    <span class="trust-text">Free Replacement Assessment</span>
+  </div>
+  <div class="trust-item">
+    <span class="trust-icon">📍</span>
+    <span class="trust-text">Atlanta Metro — 10+ Years</span>
+  </div>
+</div>
+
+<!-- ── ABOUT TONY ─────────────────────────────── -->
+<section class="about">
+  <div class="reveal">
+    <p class="about-label">Who You're Hiring</p>
+    <h2 class="about-headline">
+      Not Just a Technician.<br>
+      <em>The person who trains them.</em>
+    </h2>
+    <p class="about-body">
+      Tony Murphy doesn't just fix HVAC systems — he teaches the next generation of technicians how to do it right. As an active instructor at a metro Atlanta technical college, Tony stays current on the latest systems, codes, and best practices in the industry.
+    </p>
+    <p class="about-body">
+      When you hire Tony, you're not getting a salesperson with a truck. You're getting a career professional who understands your system at a level most competitors can't match — and charges accordingly (or rather, doesn't).
+    </p>
+    <div class="about-quote">
+      <p>"I teach HVAC because I believe homeowners deserve technicians who actually know what they're doing. I bring that same standard to every job."</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years serving metro Atlanta</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">50%+</div>
+        <div class="stat-label">Typical savings vs competitor quotes</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Labor warranty on all work</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-num">0</div>
+        <div class="stat-label">Fee for HVAC replacement assessment</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="about-visual reveal reveal-delay-2">
+    <div class="about-bg-block"></div>
+    <div class="about-photo-placeholder">
+      <div class="photo-icon">🔧</div>
+      <div class="about-photo-badge">
+        <div class="about-photo-badge-title">Tony Murphy</div>
+        <div class="about-photo-badge-sub">Owner &amp; HVAC Instructor — Atlanta, GA</div>
+      </div>
+    </div>
+    <div class="instructor-badge">Active Instructor</div>
+  </div>
+</section>
+
+<!-- ── SERVICES ───────────────────────────────── -->
+<section class="services">
+  <div class="section-header">
+    <p class="section-label light">What Tony Does</p>
+    <h2 class="section-headline light">Every Service.<br>One Trusted Professional.</h2>
+    <p class="section-sub light">Tony handles HVAC and handyman work together — fewer contractors, less coordination, and a single point of accountability.</p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <span class="service-badge">Most Requested</span>
+      <span class="service-icon">❄️</span>
+      <div class="service-name">AC Repair & Diagnostic</div>
+      <p class="service-desc">System not cooling? Making noise? Running constantly? Tony diagnoses the real issue — not the most expensive one — and fixes it right the first time.</p>
+      <a href="tel:7702928989" class="service-cta">Call now →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-1">
+      <span class="service-icon">🏗️</span>
+      <div class="service-name">AC Unit Installation</div>
+      <p class="service-desc">New system installation at a fraction of the big-company price. Properly sized, properly installed, labor warranty included.</p>
+      <a href="#assessment" class="service-cta">Free assessment →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-2">
+      <span class="service-icon">🔥</span>
+      <div class="service-name">Heating System Service</div>
+      <p class="service-desc">Furnace repair, heat pump service, heating installation. Atlanta winters are mild — until they aren't. Don't wait until January.</p>
+      <a href="#form" class="service-cta">Schedule service →</a>
+    </div>
+    <div class="service-card reveal reveal-delay-3">
+      <span class="service-icon">🛠️</span>
+      <div class="service-name">Handyman Services</div>
+      <p class="service-desc">The only Atlanta HVAC contractor who also handles your home repairs. One call, one visit, one professional. Save a trip and a phone call.</p>
+      <a href="#form" class="service-cta">Get a quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── SAVINGS SECTION ───────────────────────── -->
+<section class="savings">
+  <div class="savings-inner">
+    <div class="savings-visual reveal">
+      <div class="quote-comparison">
+        <div class="quote-card theirs">
+          <div class="quote-who">What they quoted</div>
+          <div class="quote-amount">
+            <span class="quote-sup">$</span>
+            <span>32,000</span>
+          </div>
+          <div class="quote-job">Full AC system replacement — Atlanta area</div>
+        </div>
+
+        <div class="savings-divider">
+          <div class="s-div-line"></div>
+          <div class="s-div-text">Same scope</div>
+          <div class="s-div-line"></div>
+        </div>
+
+        <div class="quote-card ours">
+          <div class="quote-saved">
+            <div class="quote-saved-num">$24k</div>
+            <div class="quote-saved-label">Saved</div>
+          </div>
+          <div class="quote-who">Tony's quote</div>
+          <div class="quote-amount">
+            <span class="quote-sup">$</span>
+            <span>7,500</span>
+          </div>
+          <div class="quote-job">Same job. Labor warranty included.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="savings-content reveal reveal-delay-2">
+      <p class="about-label" style="color:var(--orange);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why Tony Costs Less</p>
+      <h2 class="savings-headline">
+        No showroom.<br>No sales team.<br><span>Just Tony.</span>
+      </h2>
+      <p class="savings-body">Large HVAC companies carry enormous overhead — sales staff, marketing budgets, multiple layers of management. That overhead ends up in your quote. Tony runs a lean operation and passes the savings directly to you.</p>
+      <div class="why-list">
+        <div class="why-item">
+          <div class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="why-text"><strong>No sales commission:</strong> Tony's not incentivized to upsell you. His income isn't based on what he talks you into buying.</div>
+        </div>
+        <div class="why-item">
+          <div class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="why-text"><strong>Instructor-level diagnostics:</strong> He identifies the actual problem. Not the most expensive possible problem.</div>
+        </div>
+        <div class="why-item">
+          <div class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="why-text"><strong>Free replacement assessment:</strong> Know whether you actually need a new system before you spend a dollar. No charge, no obligation.</div>
+        </div>
+        <div class="why-item">
+          <div class="why-check">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="why-text"><strong>Labor warranty included:</strong> Tony stands behind his work. Every job.</div>
+        </div>
+      </div>
+      <a href="#form" class="btn-primary">Get an Honest Quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ASSESSMENT CTA ─────────────────────────── -->
+<section class="assessment-cta" id="assessment">
+  <div class="assess-label">No Fee. No Obligation. No Pressure.</div>
+  <h2 class="assess-headline">Before You Replace<br>Your HVAC System —<br>Talk to Tony First.</h2>
+  <p class="assess-sub">Tony will come to your home, evaluate your current system, and give you a straight answer about whether you actually need to replace it. If you do, he'll quote the job at a fair price. If you don't, he'll tell you that too.</p>
+
+  <div class="assess-cards">
+    <div class="assess-card">
+      <div class="assess-card-num">$0</div>
+      <div class="assess-card-label">Assessment fee</div>
+    </div>
+    <div class="assess-card">
+      <div class="assess-card-num">0%</div>
+      <div class="assess-card-label">Sales pressure</div>
+    </div>
+    <div class="assess-card">
+      <div class="assess-card-num">100%</div>
+      <div class="assess-card-label">Honest evaluation</div>
+    </div>
+  </div>
+
+  <a href="tel:7702928989" class="assess-btn">Call 770-292-8989</a>
+  <a href="#form" class="assess-btn secondary-btn">Request Assessment Online</a>
+</section>
+
+<!-- ── ACCOUNTABILITY ─────────────────────────── -->
+<section class="accountability">
+  <div class="accountability-inner">
+    <div class="section-header" style="text-align:left;">
+      <p class="section-label dark">Tony's Commitment</p>
+      <h2 class="section-headline dark">Three Things Tony<br>Will Always Do.</h2>
+    </div>
+    <div class="pillars">
+      <div class="pillar-card reveal">
+        <span class="pillar-icon">🎯</span>
+        <div class="pillar-title">Tell You the Truth</div>
+        <p class="pillar-body">Tony will tell you if your system can be repaired instead of replaced. He'll tell you if a part is still under manufacturer warranty. He'll tell you if a competitor gave you a fair quote. Truth isn't negotiable.</p>
+        <div class="pillar-detail">"I'm an instructor. I don't have anything to gain from misleading you."</div>
+      </div>
+      <div class="pillar-card reveal reveal-delay-1">
+        <span class="pillar-icon">🛡️</span>
+        <div class="pillar-title">Warranty the Work</div>
+        <p class="pillar-body">Every job Tony completes includes a labor warranty. If something he installed or repaired fails due to workmanship, he comes back and makes it right. No debate. No invoice.</p>
+        <div class="pillar-detail">Labor warranty included on all installations and repairs.</div>
+      </div>
+      <div class="pillar-card reveal reveal-delay-2">
+        <span class="pillar-icon">📞</span>
+        <div class="pillar-title">Be Reachable</div>
+        <p class="pillar-body">You're not calling a call center. When you call 770-292-8989, you're reaching Tony — the person who did the work, who knows your system, and who takes responsibility for it.</p>
+        <div class="pillar-detail">One point of contact. One person accountable.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SEASONAL ───────────────────────────────── -->
+<div class="seasonal">
+  <div class="seasonal-half summer">
+    <div class="seasonal-icon">☀️</div>
+    <div class="seasonal-title">Atlanta Summer Is Coming</div>
+    <p class="seasonal-body">When temperatures hit 95° and your AC fails, you're calling whoever answers. Get Tony's number in your phone now and schedule a spring tune-up before the wait times spike.</p>
+    <a href="#form" class="seasonal-btn">Schedule Spring Tune-Up →</a>
+  </div>
+  <div class="seasonal-half winter">
+    <div class="seasonal-icon">❄️</div>
+    <div class="seasonal-title">Don't Wait for January</div>
+    <p class="seasonal-body">Atlanta's cold snaps are short but brutal. A heating system diagnostic now costs a fraction of an emergency repair in December. Tony keeps your system ready year-round.</p>
+    <a href="#form" class="seasonal-btn">Schedule Heating Check →</a>
+  </div>
+</div>
+
+<!-- ── INSTRUCTOR SECTION ─────────────────────── -->
+<section class="instructor">
+  <div class="instructor-inner">
+    <div class="reveal">
+      <p class="about-label" style="color:var(--orange);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why This Matters to You</p>
+      <h2 class="instructor-headline">
+        He's Training<br><span>Atlanta's Next</span><br>HVAC Technicians.
+      </h2>
+      <p class="instructor-body">Tony is an active HVAC instructor at a metro Atlanta technical college — meaning he's teaching the next generation of technicians while also doing the work himself. He's not relying on 10-year-old knowledge. He's current on the latest systems, technologies, and code requirements.</p>
+      <p class="instructor-body">That expertise translates directly to every job he takes. He diagnoses faster. He identifies the root cause, not just the symptom. And he knows when a repair will hold — and when it won't.</p>
+      <div class="credential-list">
+        <div class="credential-item">
+          <div>
+            <div class="credential-text">Active HVAC Instructor</div>
+            <div class="credential-sub">Metro Atlanta Technical College — training working technicians</div>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div>
+            <div class="credential-text">10+ Years Field Experience</div>
+            <div class="credential-sub">Atlanta metropolitan area residential and commercial</div>
+          </div>
+        </div>
+        <div class="credential-item">
+          <div>
+            <div class="credential-text">HVAC + Handyman Dual Capability</div>
+            <div class="credential-sub">The only contractor in your area who does both</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="instructor-visual reveal reveal-delay-2">
+      <div class="instructor-quote">
+        <span class="instructor-quote-mark">"</span>
+        <p class="instructor-quote-text">When I teach my students, I tell them: your job is to solve the customer's actual problem, not the problem that pays you the most. I live by that rule in my own business.</p>
+        <div class="instructor-quote-attr">Tony Murphy — Owner &amp; HVAC Instructor</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ───────────────────────────── -->
+<section class="testimonials">
+  <div class="section-header">
+    <p class="section-label light">From Tony's Customers</p>
+    <h2 class="section-headline light">Atlanta Homeowners<br>Who Found Tony First.</h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-platform">Website</div>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Very professional and seemed to be very knowledgeable. I would highly recommend Tony's HVAC and Handyman Services."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">TM</div>
+        <div>
+          <div class="author-name">Thelma M.</div>
+          <div class="author-detail">Bathroom & AC work — Atlanta area</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-1">
+      <div class="testimonial-platform">Website</div>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Tony was a lifesaver this summer. He's professional, timely, and reliable. I have and will continue to recommend his services."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">JM</div>
+        <div>
+          <div class="author-name">Jessica M.</div>
+          <div class="author-detail">Emergency summer AC repair</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal reveal-delay-2">
+      <div class="testimonial-platform">Nextdoor</div>
+      <div class="testimonial-stars">★★★★★</div>
+      <p class="testimonial-quote">"Got a $32,000 quote from another company. Tony came out, assessed the system, and completed the entire job for $7,500. Same scope. I couldn't believe it."</p>
+      <div class="testimonial-author">
+        <div class="author-avatar">AT</div>
+        <div>
+          <div class="author-name">Atlanta Homeowner</div>
+          <div class="author-detail">Full AC system replacement</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FORM ───────────────────────────────────── -->
+<section class="form-section" id="form">
+  <div class="form-inner reveal">
+    <div class="form-headline">Request a Quote or Assessment</div>
+    <p class="form-sub">Fill this out and Tony will respond personally — usually same day. Free replacement assessments are always at no charge.</p>
+    <div class="form-row">
+      <div class="form-field">
+        <label>First Name</label>
+        <input type="text" placeholder="Your first name">
+      </div>
+      <div class="form-field">
+        <label>Last Name</label>
+        <input type="text" placeholder="Your last name">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-field">
+        <label>Phone</label>
+        <input type="tel" placeholder="Best number to reach you">
+      </div>
+      <div class="form-field">
+        <label>City / Neighborhood</label>
+        <input type="text" placeholder="Atlanta, Douglasville, etc.">
+      </div>
+    </div>
+    <div class="form-field">
+      <label>What do you need?</label>
+      <select>
+        <option value="">Select a service...</option>
+        <option>Free HVAC Replacement Assessment</option>
+        <option>AC Repair / Not Cooling</option>
+        <option>AC Installation Quote</option>
+        <option>Heating System Service</option>
+        <option>Seasonal Tune-Up</option>
+        <option>Handyman Services</option>
+        <option>Something Else</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <label>Tell Tony a little more (optional)</label>
+      <textarea rows="3" placeholder="What's going on with your system? Any details help..."></textarea>
+    </div>
+    <button class="form-submit">Send Request — Tony Will Respond Personally</button>
+    <p class="form-note">No bots, no call centers. Tony reads every submission.</p>
+  </div>
+</section>
+
+<!-- ── FAQ ───────────────────────────────────── -->
+<section class="faq">
+  <div class="faq-inner">
+    <div class="section-header" style="text-align:left;margin-bottom:0;">
+      <p class="section-label dark">Common Questions</p>
+      <h2 class="section-headline dark" style="font-size:clamp(36px,4vw,56px);">Straight Answers<br>From the Technician.</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How much does AC replacement really cost in Atlanta?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-answer">
+          A legitimate full AC system replacement in Atlanta should run $6,000–$14,000 depending on system size, efficiency rating, and installation complexity. If a company is quoting you $20,000–$35,000, you're either looking at unnecessary upgrades being bundled in, or significant overhead being passed to you. Tony's free assessment will tell you exactly what your home needs and what it should cost.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          How do I know if I need to replace or just repair my AC?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-answer">
+          The general rule: if your system is under 10 years old and the repair is less than 50% of replacement cost, repair it. If it's over 15 years old, has multiple failing components, or uses R-22 refrigerant (phased out), replacement is usually more economical. But every situation is different — that's exactly what Tony's free replacement assessment is for. He'll give you an honest answer, not a sales pitch.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Why are Tony's prices so much lower than competitors?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-answer">
+          Large HVAC companies carry overhead that ends up in your quote: salespeople on commission, marketing budgets, management layers, branded trucks, and large physical offices. Tony operates lean and direct. He's not paying a sales team. He's not funding a TV advertising campaign. He does the work himself, and you pay for the work — not the overhead.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What does "free replacement assessment" actually include?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-answer">
+          Tony comes to your home, evaluates your current HVAC system's condition, age, efficiency, and remaining lifespan, checks for issues that can be repaired vs. signs of systemic failure, and gives you a clear recommendation: repair, maintain, or replace. If replacement makes sense, he'll quote the job on the spot. The assessment itself is always free, with no obligation to use Tony for the work.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          Does Tony do commercial HVAC work or just residential?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-answer">
+          Both. Tony serves residential homeowners and commercial clients throughout the Atlanta metro area. If you have a commercial space with HVAC needs, call 770-292-8989 and describe the job — Tony will let you know if it's in his scope and get you a quote.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question" onclick="toggleFaq(this)">
+          What is the labor warranty on Tony's work?
+          <div class="faq-arrow">▾</div>
+        </div>
+        <div class="faq-answer">
+          Tony backs all of his installations and repairs with a labor warranty. If something he installed or repaired fails due to his workmanship — not a manufacturer defect or unrelated issue — he comes back and makes it right. Ask Tony for the specific warranty terms on your job when you book.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FINAL CTA ──────────────────────────────── -->
+<section class="final-cta">
+  <div class="final-cta-inner">
+    <h2 class="final-headline">
+      Get the Quote<br>You Actually<br><span>Deserve.</span>
+    </h2>
+    <p class="final-sub">Before you sign anything with a big HVAC company, get Tony's honest assessment. Free, no pressure, and it could save you tens of thousands of dollars.</p>
+    <div class="final-cta-group">
+      <a href="#form" class="assess-btn" style="background:var(--orange);border:none;">
+        Book Free Assessment →
+      </a>
+      <a href="#form" class="assess-btn secondary-btn" style="background:transparent;border:2px solid rgba(255,255,255,0.3);color:var(--white);">
+        Get a Service Quote →
+      </a>
+    </div>
+    <div class="final-phone-block">
+      <div class="final-phone-label">Or just call Tony directly</div>
+      <div class="final-phone-num"><a href="tel:7702928989">770-292-8989</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────── -->
+<footer>
+  <div>
+    <div class="footer-brand-name">Tony's HVAC & Handyman</div>
+    <div class="footer-brand-sub">Atlanta Metropolitan Area</div>
+    <p class="footer-body">Licensed HVAC technician, active industry instructor, and Atlanta's most affordable full-service HVAC and handyman contractor. Serving the metro Atlanta area for 10+ years.</p>
+    <p class="footer-body" style="margin-top:12px;">
+      <a href="tel:7702928989" style="color:var(--amber);text-decoration:none;font-weight:600;">770-292-8989</a><br>
+      <a href="mailto:tonymurphy29128@gmail.com" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:13px;">tonymurphy29128@gmail.com</a>
+    </p>
+  </div>
+  <div>
+    <div class="footer-heading">Services</div>
+    <ul class="footer-links">
+      <li><a href="#form">AC Repair</a></li>
+      <li><a href="#form">AC Installation</a></li>
+      <li><a href="#form">Heating Systems</a></li>
+      <li><a href="#form">HVAC Maintenance</a></li>
+      <li><a href="#form">Handyman Services</a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="footer-heading">Quick Links</div>
+    <ul class="footer-links">
+      <li><a href="#assessment">Free Assessment</a></li>
+      <li><a href="#form">Get a Quote</a></li>
+      <li><a href="tel:7702928989">Call Tony</a></li>
+    </ul>
+    <div class="footer-heading" style="margin-top:24px;">Service Area</div>
+    <ul class="footer-links">
+      <li><a href="#form">Atlanta, GA</a></li>
+      <li><a href="#form">Douglasville, GA</a></li>
+      <li><a href="#form">Metro Atlanta</a></li>
+    </ul>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2026 Tony's HVAC & Handyman Services — Atlanta, GA</span>
+  <span>770-292-8989</span>
+</div>
+
+<script>
+// FAQ toggle
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.12 });
+reveals.forEach(r => observer.observe(r));
+
+// Form submit (demo)
+const formBtn = document.querySelector('.form-submit');
+if (formBtn) {
+  formBtn.addEventListener('click', function() {
+    this.textContent = '✓ Sent — Tony will be in touch soon.';
+    this.style.background = '#1D9E75';
+    this.disabled = true;
+  });
+}
+</script>
+</body>
+</html>
