@@ -96,10 +96,10 @@ nav {
   position: absolute; inset: 0;
   background: linear-gradient(
     105deg,
-    rgba(13,27,42,0.92) 0%,
-    rgba(13,27,42,0.82) 45%,
-    rgba(13,27,42,0.55) 70%,
-    rgba(13,27,42,0.35) 100%
+    rgba(13,27,42,0.94) 0%,
+    rgba(13,27,42,0.88) 45%,
+    rgba(13,27,42,0.72) 70%,
+    rgba(13,27,42,0.50) 100%
   );
   z-index: 0;
 }
@@ -145,7 +145,7 @@ nav {
 .hero-headline span { color: var(--orange); }
 
 .hero-sub {
-  font-size: 17px; color: rgba(255,255,255,0.75);
+  font-size: 17px; color: rgba(255,255,255,0.92);
   line-height: 1.6; margin-bottom: 36px;
   max-width: 420px;
 }
@@ -184,7 +184,7 @@ nav {
 .btn-secondary:hover { border-color: var(--amber); color: var(--amber); }
 
 .hero-right {
-  background: rgba(13,27,42,0.78);
+  background: rgba(13,27,42,0.85);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   padding: 60px 5vw 60px 6vw;
@@ -206,7 +206,7 @@ nav {
 
 .comparison-label {
   font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase;
-  color: rgba(255,255,255,0.55); margin-bottom: 4px;
+  color: rgba(255,255,255,0.80); margin-bottom: 4px;
 }
 
 .comparison-their-quote {
@@ -224,7 +224,7 @@ nav {
   display: flex; align-items: center; gap: 12px;
   margin: 12px 0;
   font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase;
-  color: rgba(255,255,255,0.45);
+  color: rgba(255,255,255,0.70);
 }
 .comparison-divider::before, .comparison-divider::after {
   content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.15);
@@ -269,7 +269,7 @@ nav {
   line-height: 1;
 }
 .free-assess-body {
-  font-size: 13px; color: rgba(255,255,255,0.75); margin-top: 4px; line-height: 1.5;
+  font-size: 13px; color: rgba(255,255,255,0.90); margin-top: 4px; line-height: 1.5;
 }
 
 /* ── TRUST BAR ──────────────────────────────── */
@@ -433,7 +433,7 @@ nav {
 }
 
 .section-label.light { color: var(--amber); }
-.section-label.dark { color: var(--orange); }
+.section-label.dark { color: #7A2D08; }
 
 .section-headline {
   font-family: 'Bebas Neue', sans-serif;
@@ -447,7 +447,7 @@ nav {
   font-size: 16px; line-height: 1.7;
   max-width: 580px; margin: 16px auto 0;
 }
-.section-sub.light { color: rgba(255,255,255,0.65); }
+.section-sub.light { color: rgba(255,255,255,0.90); }
 .section-sub.dark { color: var(--muted); }
 
 .services-grid {
@@ -484,7 +484,7 @@ nav {
 }
 
 .service-desc {
-  font-size: 14px; color: rgba(255,255,255,0.6);
+  font-size: 14px; color: rgba(255,255,255,0.82);
   line-height: 1.65;
 }
 
@@ -645,7 +645,7 @@ nav {
 
 .assess-label {
   font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
-  color: rgba(255,255,255,0.75); margin-bottom: 16px;
+  color: var(--navy); margin-bottom: 16px; opacity: 0.75;
 }
 
 .assess-headline {
@@ -656,7 +656,7 @@ nav {
 }
 
 .assess-sub {
-  font-size: 17px; color: rgba(255,255,255,0.85); line-height: 1.65;
+  font-size: 17px; color: var(--navy); opacity: 0.85; line-height: 1.65;
   max-width: 620px; margin: 0 auto 36px;
 }
 
@@ -667,18 +667,19 @@ nav {
 }
 
 .assess-card {
-  background: rgba(0,0,0,0.2);
-  color: var(--white);
+  background: rgba(0,0,0,0.15);
+  color: var(--navy);
   padding: 18px 24px;
   text-align: center;
   min-width: 160px;
+  border: 1px solid rgba(0,0,0,0.12);
 }
 .assess-card-num {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 40px; line-height: 1; color: var(--amber);
+  font-size: 40px; line-height: 1; color: var(--navy);
 }
 .assess-card-label {
-  font-size: 12px; opacity: 0.8; margin-top: 4px;
+  font-size: 12px; color: var(--navy); opacity: 0.85; margin-top: 4px; font-weight: 600;
 }
 
 .assess-btn {
@@ -1422,7 +1423,7 @@ footer {
     </div>
 
     <div class="savings-content reveal reveal-delay-2">
-      <p class="about-label" style="color:var(--orange);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why Tony Costs Less</p>
+      <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why Tony Costs Less</p>
       <h2 class="savings-headline">
         No showroom.<br>No sales team.<br><span>Just Tony.</span>
       </h2>
@@ -1533,7 +1534,7 @@ footer {
 <section class="instructor">
   <div class="instructor-inner">
     <div class="reveal">
-      <p class="about-label" style="color:var(--orange);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why This Matters to You</p>
+      <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why This Matters to You</p>
       <h2 class="instructor-headline">
         He's Training<br><span>Atlanta's Next</span><br>HVAC Technicians.
       </h2>
