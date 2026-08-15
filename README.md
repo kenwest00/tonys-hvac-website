@@ -48,6 +48,17 @@ Each page contains a canonical URL, BlogPosting schema, social-sharing metadata,
 
 The online maintenance booking area has client-side required-field validation, truthful success/error states, and call-to-book fallback messaging. To activate production lead delivery, set the `data-formspree-endpoint` value on `maintenance-booking-form` to the business’s Formspree endpoint. Until this is configured, the site deliberately shows an actionable error state rather than a misleading success confirmation or silent data loss.
 
+## Corporate credibility placeholders
+
+The published page uses visible, clearly labeled placeholders rather than fabricated proof for the following launch requirements:
+
+| Pending item | Needed before final launch |
+|---|---|
+| Service-team imagery | An approved real on-the-job, equipment, or team photograph; do not substitute an AI-generated technician portrait as evidence. |
+| Credentials | Georgia contractor license number, insurance carrier and coverage details, plus bonding status if applicable. |
+| Reviews and proof | Verified review links, customer-approved names/photos, and a distinct documented case study if a third proof card is used. |
+| Booking delivery | A real form/CRM endpoint before online submissions can be delivered. |
+
 ## Customization priorities
 
 | Priority | Next change |

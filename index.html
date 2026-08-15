@@ -276,7 +276,7 @@ nav {
 
 .comparison-their-quote {
   display: flex; align-items: baseline; gap: 8px;
-  text-decoration: line-through; color: #f08080;
+  text-decoration: line-through;   color: #FF9B8A;
   margin-bottom: 4px;
 }
 .comparison-their-quote .big-num {
@@ -469,6 +469,35 @@ nav {
 }
 .about-photo-badge-sub {
   font-size: 12px; opacity: 0.85; margin-top: 2px;
+}
+.photo-placeholder-content {
+  position: relative; z-index: 1;
+  max-width: 260px;
+  margin: 0 auto auto;
+  padding-top: 84px;
+  text-align: center;
+  color: var(--white);
+}
+.photo-placeholder-kicker {
+  display: inline-block;
+  color: var(--amber);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.photo-placeholder-content h3 {
+  margin: 14px 0 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+.photo-placeholder-content p {
+  margin: 0;
+  color: rgba(255,255,255,0.76);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .standards-badge {
@@ -998,6 +1027,16 @@ nav {
   font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
   color: rgba(255,255,255,0.3);
 }
+.review-placeholder-note {
+  max-width: 1200px;
+  margin: 22px auto 0;
+  padding: 14px 16px;
+  border: 1px dashed rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.7);
+  font-size: 13px;
+  line-height: 1.55;
+}
+.review-placeholder-note strong { color: var(--amber); }
 
 /* ── SERVICE STANDARDS ───────────────────────── */
 .standards {
@@ -1045,6 +1084,16 @@ nav {
 .credential-sub {
   font-size: 12px; color: var(--muted); margin-top: 2px;
 }
+.credential-placeholder {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border: 1px dashed #B46A17;
+  background: #FFF8EA;
+  color: #633C0C;
+  font-size: 13px;
+  line-height: 1.55;
+}
+.credential-placeholder strong { display: block; margin-bottom: 3px; }
 
 .standards-visual {
   background: var(--navy);
@@ -1491,6 +1540,7 @@ footer {
         <span class="big-num">7,500</span>
       </div>
       <span class="comparison-same">Same Scope. Labor Warranty Included.</span>
+      <p style="margin:12px 0 0;color:rgba(255,255,255,0.76);font-size:11px;line-height:1.45;"><strong style="color:var(--amber)">Documented customer case:</strong> This was an outlier quote comparison, not a typical competitor price or guaranteed result. Final scope and pricing vary by property and equipment.</p>
     </div>
 
       <div class="free-assess-card">
@@ -1583,7 +1633,11 @@ footer {
   <div class="about-visual reveal reveal-delay-2">
     <div class="about-bg-block"></div>
     <div class="about-photo-placeholder">
-      <div class="photo-icon">🔧</div>
+      <div class="photo-placeholder-content">
+        <span class="photo-placeholder-kicker">Corporate Image Placeholder</span>
+        <h3>Real Synergy Service-Team Photo Needed</h3>
+        <p>Replace this panel with an approved on-the-job, equipment, or team image before launch. Do not use a stock or AI-generated technician portrait as proof of staff.</p>
+      </div>
       <div class="about-photo-badge">
         <div class="about-photo-badge-title">Synergy Heating &amp; Cooling</div>
         <div class="about-photo-badge-sub">Professional service for metro Atlanta</div>
@@ -1888,6 +1942,10 @@ footer {
             <div class="credential-sub">Coordinated support for the systems and repairs that matter most</div>
           </div>
         </div>
+        <div class="credential-placeholder">
+          <strong>Credential verification placeholder</strong>
+          Add the Georgia HVAC contractor license number, insurance carrier and coverage details, plus bonding status if applicable. Publish only information that can be verified.
+        </div>
       </div>
     </div>
 
@@ -1909,7 +1967,7 @@ footer {
   </div>
   <div class="testimonials-grid">
     <div class="testimonial-card reveal">
-      <div class="testimonial-platform">Website</div>
+      <div class="testimonial-platform">Review source pending</div>
       <div class="testimonial-stars">★★★★★</div>
       <p class="testimonial-quote">"Very professional and seemed to be very knowledgeable. I would highly recommend Synergy Heating &amp; Cooling."</p>
       <div class="testimonial-author">
@@ -1921,7 +1979,7 @@ footer {
       </div>
     </div>
     <div class="testimonial-card reveal reveal-delay-1">
-      <div class="testimonial-platform">Website</div>
+      <div class="testimonial-platform">Review source pending</div>
       <div class="testimonial-stars">★★★★★</div>
       <p class="testimonial-quote">“Synergy was a lifesaver this summer. The service was professional, timely, and reliable. I would absolutely recommend the company.”</p>
       <div class="testimonial-author">
@@ -1933,25 +1991,26 @@ footer {
       </div>
     </div>
     <div class="testimonial-card reveal reveal-delay-2">
-      <div class="testimonial-platform">Nextdoor</div>
-      <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-quote">“We received a $32,000 quote from another company. Synergy assessed the system and completed the job for $7,500 with the same scope. The value was remarkable.”</p>
+      <div class="testimonial-platform">Verified proof placeholder</div>
+      <div class="testimonial-stars">✦ ✦ ✦</div>
+      <p class="testimonial-quote">“Add an approved customer review or a documented second service case here. Use a different job type than the AC replacement comparison already shown above.”</p>
       <div class="testimonial-author">
-        <div class="author-avatar">AT</div>
+        <div class="author-avatar">VP</div>
         <div>
-          <div class="author-name">Atlanta Homeowner</div>
-          <div class="author-detail">Full AC system replacement</div>
+          <div class="author-name">Customer proof pending</div>
+          <div class="author-detail">Add service type, neighborhood, source, and consent status</div>
         </div>
       </div>
     </div>
   </div>
+  <p class="review-placeholder-note"><strong>Review verification placeholder:</strong> Replace this note with a verified Google or Nextdoor review link, review count, and any customer-approved names or photos before presenting aggregate social proof.</p>
 </section>
 
 <!-- ── FORM ───────────────────────────────────── -->
 <section class="form-section" id="form">
   <div class="form-inner reveal">
-    <div class="form-headline">Reserve Your Free Maintenance Session</div>
-    <p class="form-sub">Choose a time request online for Synergy’s complimentary HVAC maintenance session, a $200+ value. Share a few details and we will confirm availability with you.</p>
+    <div class="form-headline">Request Your Complimentary Maintenance Session</div>
+    <p class="form-sub">Synergy’s complimentary HVAC maintenance session is a $200+ stated value. Secure online request delivery is still being connected; for the fastest confirmed response, call or text 770-292-8989.</p>
     <form id="maintenance-booking-form" action="#" method="post" data-formspree-endpoint="">
       <input type="hidden" name="_subject" value="New Synergy HVAC Maintenance Request">
       <div class="form-row">
@@ -1989,8 +2048,8 @@ footer {
         <label for="details">Anything you have noticed? (Optional)</label>
         <textarea id="details" name="details" rows="3" placeholder="Warm rooms, weak airflow, unusual sounds, high energy bills, or simply overdue maintenance."></textarea>
       </div>
-      <button class="form-submit" type="submit">Reserve My Complimentary Maintenance Session</button>
-      <p class="form-note">No pressure to buy repairs. By submitting, you are requesting a complimentary maintenance appointment with Synergy Heating &amp; Cooling. We will contact you to confirm availability.</p>
+      <button class="form-submit" type="submit">Request My Complimentary Maintenance Session</button>
+      <p class="form-note">No pressure to buy repairs. <strong>Booking delivery placeholder:</strong> an online lead endpoint still needs to be connected before this request can be delivered. For immediate assistance, call or text 770-292-8989.</p>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
     </form>
   </div>
