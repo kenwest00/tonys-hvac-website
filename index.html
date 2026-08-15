@@ -238,15 +238,15 @@ nav {
   content: ''; flex: 1; height: 1px; background: rgba(255,255,255,0.15);
 }
 
-.comparison-tony-quote {
+.comparison-synergy-quote {
   display: flex; align-items: baseline; gap: 8px;
   color: var(--orange);
 }
-.comparison-tony-quote .big-num {
+.comparison-synergy-quote .big-num {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 82px; line-height: 1;
 }
-.comparison-tony-quote .sup { font-size: 30px; font-weight: 700; margin-top: 12px; }
+.comparison-synergy-quote .sup { font-size: 30px; font-weight: 700; margin-top: 12px; }
 
 .comparison-same {
   display: inline-block;
@@ -302,7 +302,7 @@ nav {
   letter-spacing: 0.3px;
 }
 
-/* ── ABOUT TONY ─────────────────────────────── */
+/* ── ABOUT SYNERGY ─────────────────────────────── */
 .about {
   padding: 100px 5vw;
   display: grid;
@@ -414,7 +414,7 @@ nav {
   font-size: 12px; opacity: 0.85; margin-top: 2px;
 }
 
-.instructor-badge {
+.standards-badge {
   position: absolute; top: 24px; left: -20px; z-index: 2;
   background: var(--amber);
   color: var(--navy);
@@ -883,28 +883,28 @@ nav {
   color: rgba(255,255,255,0.3);
 }
 
-/* ── INSTRUCTOR SECTION ─────────────────────── */
-.instructor {
+/* ── SERVICE STANDARDS ───────────────────────── */
+.standards {
   padding: 100px 5vw;
   background: var(--cream);
 }
 
-.instructor-inner {
+.standards-inner {
   max-width: 1100px; margin: 0 auto;
   display: grid;
   grid-template-columns: 5fr 4fr;
   gap: 80px; align-items: center;
 }
 
-.instructor-headline {
+.standards-headline {
   font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(42px, 4vw, 64px);
   line-height: 1; color: var(--navy); letter-spacing: 1px;
   margin-bottom: 24px;
 }
-.instructor-headline span { color: var(--orange); }
+.standards-headline span { color: var(--orange); }
 
-.instructor-body {
+.standards-body {
   font-size: 16px; color: var(--muted); line-height: 1.75;
   margin-bottom: 20px;
 }
@@ -930,13 +930,13 @@ nav {
   font-size: 12px; color: var(--muted); margin-top: 2px;
 }
 
-.instructor-visual {
+.standards-visual {
   background: var(--navy);
   padding: 48px 40px;
   position: relative;
 }
 
-.instructor-visual::before {
+.standards-visual::before {
   content: '';
   position: absolute; top: -12px; right: -12px;
   width: 100%; height: 100%;
@@ -944,25 +944,25 @@ nav {
   z-index: 0;
 }
 
-.instructor-quote {
+.standards-quote {
   position: relative; z-index: 1;
 }
 
-.instructor-quote-mark {
+.standards-quote-mark {
   font-family: 'DM Serif Display', serif;
   font-size: 100px; line-height: 0.7;
   color: var(--orange); opacity: 0.4;
   display: block; margin-bottom: 8px;
 }
 
-.instructor-quote-text {
+.standards-quote-text {
   font-family: 'DM Serif Display', serif;
   font-style: italic;
   font-size: 20px; color: var(--white); line-height: 1.55;
   margin-bottom: 24px;
 }
 
-.instructor-quote-attr {
+.standards-quote-attr {
   font-size: 13px; color: var(--amber); font-weight: 600;
   letter-spacing: 1px; text-transform: uppercase;
 }
@@ -1225,7 +1225,7 @@ footer {
 @media (max-width: 900px) {
   .hero { grid-template-columns: 1fr; background-position: right center; }
   .hero-left::after { display: none; }
-  .about, .savings-inner, .instructor-inner { grid-template-columns: 1fr; gap: 40px; }
+  .about, .savings-inner, .standards-inner { grid-template-columns: 1fr; gap: 40px; }
   .maintenance-details-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .pillars { grid-template-columns: 1fr; }
@@ -1295,10 +1295,10 @@ footer {
       Available for Service
     </div>
     <h1 class="hero-headline">
-      Atlanta's<br><span>HVAC Expert</span><br>Who Saves You<br>Thousands
+      Metro Atlanta's<br><span>Home Comfort</span><br>Service Partner
     </h1>
     <p class="hero-sub">
-      Licensed technician. Active HVAC instructor. 10+ years serving metro Atlanta at prices your neighbors wish they'd found first.
+      Professional HVAC service for metro Atlanta, with clear recommendations, dependable support, and comfort-focused solutions for every season.
     </p>
     <div class="hero-cta-group">
       <a href="tel:7702928989" class="btn-primary">
@@ -1329,7 +1329,7 @@ footer {
       </div>
 
       <div class="comparison-label" style="color: var(--orange);">Synergy's Quote</div>
-      <div class="comparison-tony-quote">
+      <div class="comparison-synergy-quote">
         <span class="sup">$</span>
         <span class="big-num">7,500</span>
       </div>
@@ -1366,7 +1366,7 @@ footer {
 <div class="trust-bar">
   <div class="trust-item">
     <span class="trust-icon">🎓</span>
-    <span class="trust-text">Active HVAC Instructor</span>
+    <span class="trust-text">Professional HVAC Service</span>
   </div>
   <div class="trust-item">
     <span class="trust-icon">🛡️</span>
@@ -1374,7 +1374,7 @@ footer {
   </div>
   <div class="trust-item">
     <span class="trust-icon">🔧</span>
-    <span class="trust-text">HVAC + Handyman in One Visit</span>
+    <span class="trust-text">Integrated HVAC &amp; Home Services</span>
   </div>
   <div class="trust-item">
     <span class="trust-icon">📋</span>
@@ -1386,22 +1386,22 @@ footer {
   </div>
 </div>
 
-<!-- ── ABOUT TONY ─────────────────────────────── -->
+<!-- ── ABOUT SYNERGY ──────────────────────────── -->
 <section class="about">
   <div class="reveal">
-    <p class="about-label">Who You're Hiring</p>
+    <p class="about-label">Why Synergy</p>
     <h2 class="about-headline">
-      Not Just a Technician.<br>
-      <em>The person who trains them.</em>
+      Comfort Service.<br>
+      <em>Built Around Standards.</em>
     </h2>
     <p class="about-body">
-      Tony Murphy doesn't just fix HVAC systems — he teaches the next generation of technicians how to do it right. As an active instructor at a metro Atlanta technical college, Tony stays current on the latest systems, codes, and best practices in the industry.
+      Synergy Heating &amp; Cooling provides dependable heating, cooling, and home-service support across metro Atlanta. Our approach is built around clear communication, thoughtful diagnostics, and work that is planned with the customer’s comfort in mind.
     </p>
     <p class="about-body">
-      When you hire Tony, you're not getting a salesperson with a truck. You're getting a career professional who understands your system at a level most competitors can't match — and charges accordingly (or rather, doesn't).
+      From the first visit to the final walkthrough, Synergy delivers a more organized service experience: clear recommendations, transparent scope, and practical solutions for the systems that keep your home or business running.
     </p>
     <div class="about-quote">
-      <p>"I teach HVAC because I believe homeowners deserve technicians who actually know what they're doing. I bring that same standard to every job."</p>
+      <p>“Clear recommendations. Professional service. Comfort you can count on.”</p>
     </div>
     <div class="about-stats">
       <div class="stat-card">
@@ -1409,16 +1409,16 @@ footer {
         <div class="stat-label">Years serving metro Atlanta</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">50%+</div>
-        <div class="stat-label">Typical savings vs competitor quotes</div>
+        <div class="stat-num">Clear</div>
+        <div class="stat-label">Scope and pricing before work begins</div>
       </div>
       <div class="stat-card">
         <div class="stat-num">100%</div>
         <div class="stat-label">Labor warranty on all work</div>
       </div>
       <div class="stat-card">
-        <div class="stat-num">0</div>
-        <div class="stat-label">Fee for HVAC replacement assessment</div>
+        <div class="stat-num">$0</div>
+        <div class="stat-label">Cost for the complimentary maintenance session</div>
       </div>
     </div>
   </div>
@@ -1428,27 +1428,27 @@ footer {
     <div class="about-photo-placeholder">
       <div class="photo-icon">🔧</div>
       <div class="about-photo-badge">
-        <div class="about-photo-badge-title">Tony Murphy</div>
-        <div class="about-photo-badge-sub">Owner &amp; HVAC Instructor — Atlanta, GA</div>
+        <div class="about-photo-badge-title">Synergy Heating &amp; Cooling</div>
+        <div class="about-photo-badge-sub">Professional service for metro Atlanta</div>
       </div>
     </div>
-    <div class="instructor-badge">Active Instructor</div>
+    <div class="standards-badge">Service-First Standards</div>
   </div>
 </section>
 
 <!-- ── SERVICES ───────────────────────────────── -->
 <section class="services">
   <div class="section-header">
-    <p class="section-label light">What Tony Does</p>
-    <h2 class="section-headline light">Every Service.<br>One Trusted Professional.</h2>
-    <p class="section-sub light">Tony handles HVAC and handyman work together — fewer contractors, less coordination, and a single point of accountability.</p>
+    <p class="section-label light">What Synergy Delivers</p>
+    <h2 class="section-headline light">Every Service.<br>One Standard of Care.</h2>
+    <p class="section-sub light">Synergy brings heating, cooling, and home-service needs into one coordinated experience—clear communication, less coordination, and dependable support from start to finish.</p>
   </div>
   <div class="services-grid">
     <div class="service-card reveal">
       <span class="service-badge">Most Requested</span>
       <span class="service-icon">❄️</span>
       <div class="service-name">AC Repair & Diagnostic</div>
-      <p class="service-desc">System not cooling? Making noise? Running constantly? Tony diagnoses the real issue — not the most expensive one — and fixes it right the first time.</p>
+      <p class="service-desc">System not cooling? Making noise? Running constantly? Synergy evaluates the underlying issue, explains the options clearly, and delivers practical repair recommendations.</p>
       <a href="tel:7702928989" class="service-cta">Call now →</a>
     </div>
     <div class="service-card reveal reveal-delay-1">
@@ -1466,7 +1466,7 @@ footer {
     <div class="service-card reveal reveal-delay-3">
       <span class="service-icon">🛠️</span>
       <div class="service-name">Handyman Services</div>
-      <p class="service-desc">The only Atlanta HVAC contractor who also handles your home repairs. One call, one visit, one professional. Save a trip and a phone call.</p>
+      <p class="service-desc">Practical home repairs from a service partner that understands how HVAC and home comfort fit together. Streamline your to-do list with one coordinated service experience.</p>
       <a href="#form" class="service-cta">Get a quote →</a>
     </div>
   </div>
@@ -1510,21 +1510,21 @@ footer {
     <div class="savings-content reveal reveal-delay-2">
       <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why Synergy Costs Less</p>
       <h2 class="savings-headline">
-        No showroom.<br>No sales team.<br><span>Just Tony.</span>
+        Smart operations.<br>Clear scope.<br><span>Real value.</span>
       </h2>
-      <p class="savings-body">Large HVAC companies carry enormous overhead — sales staff, marketing budgets, multiple layers of management. That overhead ends up in your quote. Tony runs a lean operation and passes the savings directly to you.</p>
+      <p class="savings-body">Synergy is built to keep service focused on the work that matters: thoughtful diagnostics, efficient operations, and transparent recommendations. That approach helps us deliver practical value without unnecessary complexity.</p>
       <div class="why-list">
         <div class="why-item">
           <div class="why-check">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="why-text"><strong>No sales commission:</strong> Tony's not incentivized to upsell you. His income isn't based on what he talks you into buying.</div>
+          <div class="why-text"><strong>Customer-first recommendations:</strong> Synergy focuses on system condition, comfort needs, and practical next steps—not unnecessary upgrades.</div>
         </div>
         <div class="why-item">
           <div class="why-check">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="why-text"><strong>Instructor-level diagnostics:</strong> He identifies the actual problem. Not the most expensive possible problem.</div>
+          <div class="why-text"><strong>Thorough diagnostics:</strong> Our process is designed to identify the actual issue, not simply the most expensive possible solution.</div>
         </div>
         <div class="why-item">
           <div class="why-check">
@@ -1536,7 +1536,7 @@ footer {
           <div class="why-check">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="why-text"><strong>Labor warranty included:</strong> Tony stands behind his work. Every job.</div>
+          <div class="why-text"><strong>Labor warranty included:</strong> Synergy stands behind the workmanship delivered on every job.</div>
         </div>
       </div>
       <a href="#form" class="btn-primary">Get an Honest Quote →</a>
@@ -1635,26 +1635,26 @@ footer {
   <div class="accountability-inner">
     <div class="section-header" style="text-align:left;">
       <p class="section-label dark">Our Commitment</p>
-      <h2 class="section-headline dark">Three Things Tony<br>Will Always Do.</h2>
+      <h2 class="section-headline dark">Three Standards Synergy<br>Delivers Every Day.</h2>
     </div>
     <div class="pillars">
       <div class="pillar-card reveal">
         <span class="pillar-icon">🎯</span>
-        <div class="pillar-title">Tell You the Truth</div>
-        <p class="pillar-body">Tony will tell you if your system can be repaired instead of replaced. He'll tell you if a part is still under manufacturer warranty. He'll tell you if a competitor gave you a fair quote. Truth isn't negotiable.</p>
-        <div class="pillar-detail">"I'm an instructor. I don't have anything to gain from misleading you."</div>
+        <div class="pillar-title">Clear Recommendations</div>
+        <p class="pillar-body">Synergy explains whether a repair, maintenance step, or replacement is worth considering, so customers can make decisions with context and confidence.</p>
+        <div class="pillar-detail">Transparent information before any additional work is approved.</div>
       </div>
       <div class="pillar-card reveal reveal-delay-1">
         <span class="pillar-icon">🛡️</span>
-        <div class="pillar-title">Warranty the Work</div>
-        <p class="pillar-body">Every job Tony completes includes a labor warranty. If something he installed or repaired fails due to workmanship, he comes back and makes it right. No debate. No invoice.</p>
+        <div class="pillar-title">Stand Behind the Work</div>
+        <p class="pillar-body">Synergy backs qualifying installations and repairs with a labor warranty. If workmanship needs attention, our team will review the issue and work toward a resolution.</p>
         <div class="pillar-detail">Labor warranty included on all installations and repairs.</div>
       </div>
       <div class="pillar-card reveal reveal-delay-2">
         <span class="pillar-icon">📞</span>
-        <div class="pillar-title">Be Reachable</div>
-        <p class="pillar-body">You're not calling a call center. When you call 770-292-8989, you're reaching Tony — the person who did the work, who knows your system, and who takes responsibility for it.</p>
-        <div class="pillar-detail">One point of contact. One person accountable.</div>
+        <div class="pillar-title">Stay Responsive</div>
+        <p class="pillar-body">When you contact Synergy, you reach a company focused on timely communication, clear appointment coordination, and dependable follow-through.</p>
+        <div class="pillar-detail">One coordinated service experience from booking to completion.</div>
       </div>
     </div>
   </div>
@@ -1665,54 +1665,54 @@ footer {
   <div class="seasonal-half summer">
     <div class="seasonal-icon">☀️</div>
     <div class="seasonal-title">Atlanta Summer Is Coming</div>
-    <p class="seasonal-body">When temperatures hit 95° and your AC fails, you're calling whoever answers. Get Tony's number in your phone now and schedule a spring tune-up before the wait times spike.</p>
+    <p class="seasonal-body">When temperatures hit 95° and your AC fails, you need a service partner ready to respond. Schedule seasonal maintenance with Synergy before demand and wait times rise.</p>
     <a href="#form" class="seasonal-btn">Schedule Spring Tune-Up →</a>
   </div>
   <div class="seasonal-half winter">
     <div class="seasonal-icon">❄️</div>
     <div class="seasonal-title">Don't Wait for January</div>
-    <p class="seasonal-body">Atlanta's cold snaps are short but brutal. A heating system diagnostic now costs a fraction of an emergency repair in December. Tony keeps your system ready year-round.</p>
+    <p class="seasonal-body">Atlanta's cold snaps are short but brutal. A heating system check now can cost far less than an emergency repair in December. Synergy helps keep your system ready year-round.</p>
     <a href="#form" class="seasonal-btn">Schedule Heating Check →</a>
   </div>
 </div>
 
-<!-- ── INSTRUCTOR SECTION ─────────────────────── -->
-<section class="instructor">
-  <div class="instructor-inner">
+<!-- ── SERVICE STANDARDS ─────────────────────── -->
+<section class="standards">
+  <div class="standards-inner">
     <div class="reveal">
-      <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why This Matters to You</p>
-      <h2 class="instructor-headline">
-        He's Training<br><span>Atlanta's Next</span><br>HVAC Technicians.
+      <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">The Synergy Difference</p>
+      <h2 class="standards-headline">
+        A Better Standard<br>For <span>Home Comfort</span><br>Service.
       </h2>
-      <p class="instructor-body">Tony is an active HVAC instructor at a metro Atlanta technical college — meaning he's teaching the next generation of technicians while also doing the work himself. He's not relying on 10-year-old knowledge. He's current on the latest systems, technologies, and code requirements.</p>
-      <p class="instructor-body">That expertise translates directly to every job he takes. He diagnoses faster. He identifies the root cause, not just the symptom. And he knows when a repair will hold — and when it won't.</p>
+      <p class="standards-body">Synergy pairs practical technical knowledge with a disciplined service process. Every visit begins with understanding the system, the space, and the customer’s goals before recommendations are made.</p>
+      <p class="standards-body">That company-wide approach means more consistent communication, clearer options, and service that is designed around long-term comfort—not a one-size-fits-all answer.</p>
       <div class="credential-list">
         <div class="credential-item">
           <div>
-            <div class="credential-text">Active HVAC Instructor</div>
-            <div class="credential-sub">Metro Atlanta Technical College — training working technicians</div>
+            <div class="credential-text">System-Focused Service</div>
+            <div class="credential-sub">Recommendations shaped by the condition and needs of the equipment</div>
           </div>
         </div>
         <div class="credential-item">
           <div>
-            <div class="credential-text">10+ Years Field Experience</div>
-            <div class="credential-sub">Atlanta metropolitan area residential and commercial</div>
+            <div class="credential-text">Metro Atlanta Coverage</div>
+            <div class="credential-sub">Dependable support for homes and businesses across the area</div>
           </div>
         </div>
         <div class="credential-item">
           <div>
-            <div class="credential-text">HVAC + Handyman Dual Capability</div>
-            <div class="credential-sub">The only contractor in your area who does both</div>
+            <div class="credential-text">Heating, Cooling &amp; Home Services</div>
+            <div class="credential-sub">Coordinated support for the systems and repairs that matter most</div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="instructor-visual reveal reveal-delay-2">
-      <div class="instructor-quote">
-        <span class="instructor-quote-mark">"</span>
-        <p class="instructor-quote-text">When I teach my students, I tell them: your job is to solve the customer's actual problem, not the problem that pays you the most. I live by that rule in my own business.</p>
-        <div class="instructor-quote-attr">Tony Murphy — Owner &amp; HVAC Instructor</div>
+    <div class="standards-visual reveal reveal-delay-2">
+      <div class="standards-quote">
+        <span class="standards-quote-mark">“</span>
+        <p class="standards-quote-text">Our purpose is to make every service decision easier to understand—and every home or business more comfortable to operate.</p>
+        <div class="standards-quote-attr">Synergy Heating &amp; Cooling Service Standard</div>
       </div>
     </div>
   </div>
@@ -1722,7 +1722,7 @@ footer {
 <section class="testimonials">
   <div class="section-header">
     <p class="section-label light">From Synergy Customers</p>
-    <h2 class="section-headline light">Atlanta Homeowners<br>Who Found Tony First.</h2>
+    <h2 class="section-headline light">Atlanta Customers<br>Who Chose Synergy.</h2>
   </div>
   <div class="testimonials-grid">
     <div class="testimonial-card reveal">
@@ -1740,7 +1740,7 @@ footer {
     <div class="testimonial-card reveal reveal-delay-1">
       <div class="testimonial-platform">Website</div>
       <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-quote">"Tony was a lifesaver this summer. He's professional, timely, and reliable. I have and will continue to recommend his services."</p>
+      <p class="testimonial-quote">“Synergy was a lifesaver this summer. The service was professional, timely, and reliable. I would absolutely recommend the company.”</p>
       <div class="testimonial-author">
         <div class="author-avatar">JM</div>
         <div>
@@ -1752,7 +1752,7 @@ footer {
     <div class="testimonial-card reveal reveal-delay-2">
       <div class="testimonial-platform">Nextdoor</div>
       <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-quote">"Got a $32,000 quote from another company. Tony came out, assessed the system, and completed the entire job for $7,500. Same scope. I couldn't believe it."</p>
+      <p class="testimonial-quote">“We received a $32,000 quote from another company. Synergy assessed the system and completed the job for $7,500 with the same scope. The value was remarkable.”</p>
       <div class="testimonial-author">
         <div class="author-avatar">AT</div>
         <div>
@@ -1816,7 +1816,7 @@ footer {
   <div class="faq-inner">
     <div class="section-header" style="text-align:left;margin-bottom:0;">
       <p class="section-label dark">Common Questions</p>
-      <h2 class="section-headline dark" style="font-size:clamp(36px,4vw,56px);">Straight Answers<br>From the Technician.</h2>
+      <h2 class="section-headline dark" style="font-size:clamp(36px,4vw,56px);">Straight Answers<br>From Synergy.</h2>
     </div>
     <div class="faq-list">
       <div class="faq-item">
@@ -1825,7 +1825,7 @@ footer {
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          A legitimate full AC system replacement in Atlanta should run $6,000–$14,000 depending on system size, efficiency rating, and installation complexity. If a company is quoting you $20,000–$35,000, you're either looking at unnecessary upgrades being bundled in, or significant overhead being passed to you. Synergy's free assessment will tell you exactly what your home needs and what it should cost.
+          Full AC system replacement costs vary based on system size, efficiency rating, installation complexity, and the condition of the existing equipment. Synergy reviews the condition of your system, explains the options available, and provides a clearly scoped recommendation for your property.
         </div>
       </div>
       <div class="faq-item">
@@ -1843,7 +1843,7 @@ footer {
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          Large HVAC companies carry overhead that ends up in your quote: salespeople on commission, marketing budgets, management layers, branded trucks, and large physical offices. Tony operates lean and direct. He's not paying a sales team. He's not funding a TV advertising campaign. He does the work himself, and you pay for the work — not the overhead.
+          Synergy is structured around efficient operations, transparent recommendations, and a focused service process. By keeping the work centered on system needs and clear scope, we aim to deliver practical value without unnecessary complexity.
         </div>
       </div>
       <div class="faq-item">
@@ -1857,11 +1857,11 @@ footer {
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          Does Tony do commercial HVAC work or just residential?
+          Does Synergy serve commercial HVAC clients as well as residential customers?
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          Both. Tony serves residential homeowners and commercial clients throughout the Atlanta metro area. If you have a commercial space with HVAC needs, call 770-292-8989 and describe the job — Tony will let you know if it's in his scope and get you a quote.
+          Synergy supports both residential homeowners and commercial clients throughout the Atlanta metro area. Contact our team at 770-292-8989 to discuss the property, system, and service needs, and we will advise on the next steps.
         </div>
       </div>
       <div class="faq-item">
@@ -1870,7 +1870,7 @@ footer {
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          Tony backs all of his installations and repairs with a labor warranty. If something he installed or repaired fails due to his workmanship — not a manufacturer defect or unrelated issue — he comes back and makes it right. Ask Tony for the specific warranty terms on your job when you book.
+          Synergy backs qualifying installations and repairs with a labor warranty. If workmanship requires review, our team will assess the issue and work toward a resolution. Ask Synergy for the specific warranty terms that apply to your project when you book.
         </div>
       </div>
     </div>
@@ -1893,7 +1893,7 @@ footer {
       </a>
     </div>
     <div class="final-phone-block">
-      <div class="final-phone-label">Or just call Tony directly</div>
+      <div class="final-phone-label">Or call Synergy directly</div>
       <div class="final-phone-num"><a href="tel:7702928989">770-292-8989</a></div>
     </div>
   </div>
@@ -1903,10 +1903,9 @@ footer {
 <footer>
   <div>
     <img class="footer-logo" src="synergy-heating-cooling-logo.png" alt="Synergy Heating &amp; Cooling">
-    <p class="footer-body">Licensed HVAC technician, active industry instructor, and full-service heating and cooling contractor serving the Atlanta metropolitan area.</p>
+    <p class="footer-body">Professional heating, cooling, maintenance, and home-service support for metro Atlanta. Synergy is built around clear communication, practical solutions, and dependable customer care.</p>
     <p class="footer-body" style="margin-top:12px;">
-      <a href="tel:7702928989" style="color:var(--amber);text-decoration:none;font-weight:600;">770-292-8989</a><br>
-      <a href="mailto:tonymurphy29128@gmail.com" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:13px;">tonymurphy29128@gmail.com</a>
+      <a href="tel:7702928989" style="color:var(--amber);text-decoration:none;font-weight:600;">770-292-8989</a>
     </p>
   </div>
   <div>
@@ -1924,7 +1923,7 @@ footer {
     <ul class="footer-links">
       <li><a href="#maintenance">Free Maintenance</a></li>
       <li><a href="#form">Get a Quote</a></li>
-      <li><a href="tel:7702928989">Call Tony</a></li>
+      <li><a href="tel:7702928989">Call Synergy</a></li>
     </ul>
     <div class="footer-heading" style="margin-top:24px;">Service Area</div>
     <ul class="footer-links">

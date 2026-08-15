@@ -20,12 +20,12 @@ A high-converting, single-file HTML website for **Synergy Heating & Cooling**, s
 |---|---|
 | Hero | Separates urgent service callers from visitors who want to research savings and system care |
 | Trust bar | Communicates key credentials and service benefits |
-| About the owner | Introduces Tony’s HVAC instructor background and experience |
+| About Synergy | Introduces the company’s service standards, customer experience, and metro Atlanta focus |
 | Services | Covers AC repair, installation, heating, maintenance, and handyman services |
 | Savings section | Explains Synergy’s direct-service value proposition and quote-comparison story |
 | Complimentary maintenance offer | Promotes an online-bookable HVAC maintenance session with a $200+ stated value |
 | Maintenance details | Explains coil cleaning, refrigerant-performance checks, capacitor checks, blower-motor amperage checks, airflow review, and plain-English findings |
-| Accountability and instructor sections | Builds trust through transparent customer commitments and expertise |
+| Service standards section | Builds trust through transparent company commitments and customer-first service principles |
 | Testimonials, FAQ, and contact area | Supports conversion and answers common customer questions |
 
 ## Online maintenance booking
@@ -38,7 +38,7 @@ The online maintenance booking area has client-side required-field validation an
 |---|---|
 | 1 | Connect the maintenance booking form to the preferred CRM or lead-management endpoint |
 | 2 | Confirm the exact complimentary maintenance scope, eligibility, service-area limits, and terms before launch |
-| 3 | Replace the About visual placeholder with real photography of Tony and completed work |
+| 3 | Replace the About visual placeholder with professional imagery of Synergy service work and equipment |
 | 4 | Add verified Google Reviews or another independently verifiable review source |
 | 5 | Add analytics and conversion tracking before paid promotion |
 
@@ -53,5 +53,3 @@ The site is plain HTML, CSS, and JavaScript. It does not require a build process
 Atlanta Metropolitan Area
 
 770-292-8989
-
-tonymurphy29128@gmail.com
