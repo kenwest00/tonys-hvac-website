@@ -158,12 +158,13 @@ nav {
   position: absolute; inset: 0;
   background: linear-gradient(
     105deg,
-    rgba(13,27,42,0.94) 0%,
-    rgba(13,27,42,0.88) 45%,
-    rgba(13,27,42,0.72) 70%,
-    rgba(13,27,42,0.50) 100%
+    rgba(13,27,42,0.34) 0%,
+    rgba(13,27,42,0.22) 45%,
+    rgba(13,27,42,0.12) 70%,
+    rgba(13,27,42,0.06) 100%
   );
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero-left {
@@ -171,7 +172,7 @@ nav {
   display: flex; flex-direction: column; justify-content: center;
   position: relative;
   z-index: 1;
-  background: rgba(10, 20, 33, 0.82);
+  background: linear-gradient(90deg, rgba(10, 20, 33, 0.74) 0%, rgba(10, 20, 33, 0.54) 100%);
 }
 
 .hero-left::after {
@@ -248,9 +249,9 @@ nav {
 .btn-secondary:hover { background: rgba(255,255,255,0.18); border-color: var(--amber); color: var(--amber); }
 
 .hero-right {
-  background: rgba(13,27,42,0.80);
-  backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(2px);
+  background: rgba(13,27,42,0.44);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
   padding: 60px 5vw 60px 6vw;
   display: flex; flex-direction: column; justify-content: center;
   position: relative;
@@ -260,7 +261,7 @@ nav {
 
 .hero-right-label {
   font-size: 11px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
-  color: var(--steel);
+  color: var(--amber);
   margin-bottom: 20px;
 }
 
