@@ -11,7 +11,7 @@ A high-converting, single-file HTML website for **Synergy Heating & Cooling**, s
 | `index.html` | Full production website with all HTML, CSS, and JavaScript in one file |
 | `synergy-heating-cooling-logo.png` | Cropped web-ready Synergy Heating & Cooling brand logo |
 | `hero.png` | Atlanta-area HVAC hero image |
-| `tonys-hvac-growth-blueprint.docx` | Original growth strategy reference document |
+| `synergy-growth-blueprint.docx` | Synergy growth strategy reference document |
 | `README.md` | Project overview and implementation notes |
 
 ## Site sections
