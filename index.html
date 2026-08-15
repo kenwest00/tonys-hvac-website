@@ -120,6 +120,15 @@ nav {
   font-size: 22px; color: var(--white); letter-spacing: 1px;
 }
 
+.nav-blog {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.nav-blog:hover { color: var(--amber); }
+
 .nav-cta {
   background: var(--orange);
   color: var(--white);
@@ -1392,7 +1401,7 @@ footer {
   .nav-logo-image { height: 52px; max-width: 150px; padding: 3px 6px; }
   .nav-call-label { font-size: 9px; }
   .nav-call-number { font-size: 18px; }
-  .nav-cta { display: none; }
+  .nav-blog, .nav-cta { display: none; }
   .assessment-cta::before { font-size: 120px; }
 }
 </style>
@@ -1412,6 +1421,7 @@ footer {
       <span class="nav-call-label">Call or Text</span>
       <span class="nav-call-number">770-292-8989</span>
     </a>
+    <a href="blog/" class="nav-blog">Blog</a>
     <a href="#maintenance" class="nav-cta">Book Free Maintenance</a>
   </div>
 </nav>
@@ -2099,6 +2109,7 @@ footer {
     <div class="footer-heading">Quick Links</div>
     <ul class="footer-links">
       <li><a href="#maintenance">Free Maintenance</a></li>
+      <li><a href="blog/">Summer HVAC Blog</a></li>
       <li><a href="#form">Get a Quote</a></li>
       <li><a href="tel:7702928989">Call Synergy</a></li>
     </ul>

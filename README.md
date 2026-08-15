@@ -30,6 +30,20 @@ A high-converting, single-file HTML website for **Synergy Heating & Cooling**, s
 | Service standards section | Builds trust through transparent company commitments and customer-first service principles |
 | Testimonials, FAQ, and contact area | Supports conversion and answers common customer questions |
 
+## Summer HVAC blog
+
+The static blog is published under `/blog/` and is linked from the homepage navigation and footer. It includes a central index plus five summer articles designed for Atlanta-area search and neighborhood-post traffic:
+
+| Article | Path |
+|---|---|
+| AC not cooling troubleshooting | `/blog/atlanta-ac-not-cooling.html` |
+| Long AC runtime | `/blog/why-atlanta-ac-runs-all-day.html` |
+| Repair-versus-replace guidance | `/blog/atlanta-ac-repair-or-replace.html` |
+| AC replacement second opinion | `/blog/atlanta-ac-second-opinion.html` |
+| Late-summer maintenance planning | `/blog/atlanta-ac-ready-next-heat-wave.html` |
+
+Each page contains a canonical URL, BlogPosting schema, social-sharing metadata, clear local framing, and a prominent complimentary $200+ maintenance-session call to action.
+
 ## Online maintenance booking
 
 The online maintenance booking area has client-side required-field validation, truthful success/error states, and call-to-book fallback messaging. To activate production lead delivery, set the `data-formspree-endpoint` value on `maintenance-booking-form` to the business’s Formspree endpoint. Until this is configured, the site deliberately shows an actionable error state rather than a misleading success confirmation or silent data loss.
