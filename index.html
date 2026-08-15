@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tony's HVAC & Handyman | Atlanta's Most Affordable Expert | Free Replacement Assessment</title>
-<meta name="description" content="Tony Murphy — active HVAC instructor, 10+ years Atlanta metro. Free replacement assessment. Routinely saves customers 50–70% vs competitors. Call 770-292-8989.">
+<title>Synergy Heating &amp; Cooling | Free HVAC Maintenance Session | Atlanta</title>
+<meta name="description" content="Book Synergy Heating &amp; Cooling’s complimentary HVAC maintenance session—a $200+ value. Get cleaner coils, key component checks, and straightforward answers. Call 770-292-8989.">
+<meta name="theme-color" content="#0D1B2A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -43,14 +44,19 @@ nav {
 }
 
 .nav-logo {
-  display: flex; flex-direction: column; line-height: 1;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-logo-top {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 22px; color: var(--white); letter-spacing: 1px;
-}
-.nav-logo-sub {
-  font-size: 10px; color: var(--amber); letter-spacing: 2px; text-transform: uppercase;
+.nav-logo-image {
+  display: block;
+  height: 64px;
+  width: auto;
+  max-width: 180px;
+  padding: 4px 8px;
+  background: var(--white);
+  border-radius: 3px;
+  object-fit: contain;
 }
 
 .nav-right {
@@ -703,6 +709,79 @@ nav {
 }
 .assess-btn.secondary-btn:hover { background: var(--cream); }
 
+/* ── MAINTENANCE DETAILS ─────────────────────── */
+.maintenance-details {
+  background: var(--white);
+  padding: 100px 5vw;
+}
+.maintenance-details-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+.maintenance-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin: 52px 0 38px;
+}
+.maintenance-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 28px;
+  background: var(--cream);
+  border-top: 3px solid var(--orange);
+}
+.maintenance-item-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  color: var(--amber);
+  font-size: 20px;
+}
+.maintenance-item-title {
+  font-family: 'Bebas Neue', sans-serif;
+  color: var(--navy);
+  font-size: 27px;
+  letter-spacing: 0.7px;
+  line-height: 1;
+  margin-bottom: 9px;
+}
+.maintenance-item-body {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.maintenance-promise {
+  max-width: 840px;
+  margin: 0 auto;
+  padding: 26px 32px;
+  text-align: center;
+  border-left: 4px solid var(--orange);
+  background: var(--cream);
+  color: var(--navy);
+  font-family: 'DM Serif Display', serif;
+  font-size: 22px;
+  font-style: italic;
+  line-height: 1.45;
+}
+.maintenance-cta-wrap {
+  margin-top: 34px;
+  text-align: center;
+}
+.maintenance-terms {
+  max-width: 780px;
+  margin: 18px auto 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
 /* ── ACCOUNTABILITY ─────────────────────────── */
 .accountability {
   padding: 100px 5vw;
@@ -1002,13 +1081,14 @@ footer {
   gap: 48px;
 }
 
-.footer-brand-name {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px; color: var(--white); letter-spacing: 1px;
-}
-.footer-brand-sub {
-  font-size: 12px; color: var(--amber); letter-spacing: 2px; text-transform: uppercase;
-  margin-top: 2px;
+.footer-logo {
+  display: block;
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+  padding: 12px 16px;
+  background: var(--white);
+  border-radius: 3px;
 }
 .footer-body {
   font-size: 14px; color: rgba(255,255,255,0.45);
@@ -1146,6 +1226,7 @@ footer {
   .hero { grid-template-columns: 1fr; background-position: right center; }
   .hero-left::after { display: none; }
   .about, .savings-inner, .instructor-inner { grid-template-columns: 1fr; gap: 40px; }
+  .maintenance-details-grid { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr 1fr; }
   .pillars { grid-template-columns: 1fr; }
   .testimonials-grid { grid-template-columns: 1fr; }
@@ -1160,25 +1241,27 @@ footer {
 
 @media (max-width: 600px) {
   .services-grid { grid-template-columns: 1fr; }
+  .nav-logo-image { height: 52px; max-width: 150px; padding: 3px 6px; }
+  .nav-call-label { font-size: 9px; }
+  .nav-call-number { font-size: 18px; }
   .nav-cta { display: none; }
   .assessment-cta::before { font-size: 120px; }
 }
 </style>
 </head>
-<body>
+<body id="top">
 
 <!-- ── NAV ──────────────────────────────────── -->
 <nav>
-  <div class="nav-logo">
-    <span class="nav-logo-top">Tony's HVAC & Handyman</span>
-    <span class="nav-logo-sub">Atlanta Metropolitan Area</span>
-  </div>
+  <a class="nav-logo" href="#top" aria-label="Synergy Heating and Cooling home">
+    <img class="nav-logo-image" src="synergy-heating-cooling-logo.png" alt="Synergy Heating &amp; Cooling">
+  </a>
   <div class="nav-right">
     <a href="tel:7702928989" class="nav-call">
       <span class="nav-call-label">Call or Text</span>
       <span class="nav-call-number">770-292-8989</span>
     </a>
-    <a href="#assessment" class="nav-cta">Free Replacement Assessment</a>
+    <a href="#maintenance" class="nav-cta">Book Free Maintenance</a>
   </div>
 </nav>
 
@@ -1189,7 +1272,7 @@ footer {
   <img
     src="hero.png"
     alt="Beautiful Atlanta-area home with an AC unit installed outside, lush green landscaping, and the Atlanta metropolitan skyline visible in the background at golden hour"
-    title="Tony's HVAC &amp; Handyman — Serving Atlanta Metro Area Homes | 770-292-8989"
+    title="Synergy Heating &amp; Cooling — Serving Atlanta Metro Area Homes | 770-292-8989"
     width="1672"
     height="941"
     loading="eager"
@@ -1222,8 +1305,8 @@ footer {
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.69 12 19.79 19.79 0 011.65 3.49 2 2 0 013.62 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 9.91a16 16 0 006.18 6.18l.97-.97a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
         Call 770-292-8989 Now
       </a>
-      <a href="#assessment" class="btn-secondary">
-        Get Your Free Replacement Assessment →
+      <a href="#maintenance" class="btn-secondary">
+        Claim Your Free $200+ Maintenance Session →
       </a>
     </div>
   </div>
@@ -1245,7 +1328,7 @@ footer {
         <span></span>
       </div>
 
-      <div class="comparison-label" style="color: var(--orange);">Tony's Quote</div>
+      <div class="comparison-label" style="color: var(--orange);">Synergy's Quote</div>
       <div class="comparison-tony-quote">
         <span class="sup">$</span>
         <span class="big-num">7,500</span>
@@ -1253,16 +1336,16 @@ footer {
       <span class="comparison-same">Same Scope. Labor Warranty Included.</span>
     </div>
 
-    <div class="free-assess-card">
+      <div class="free-assess-card">
       <div class="free-assess-icon">✓</div>
       <div>
-        <div class="free-assess-title">Free Replacement Assessment</div>
-        <div class="free-assess-body">Tony will evaluate your system at no charge and give you a straight answer — repair, maintain, or replace — with no sales pressure.</div>
+        <div class="free-assess-title">Free HVAC Maintenance Session</div>
+        <div class="free-assess-body">A $200+ value at no cost: key system checks, clear answers, and no pressure to buy repairs.</div>
       </div>
     </div>
 
-    <a href="#form" class="btn-primary" style="background: var(--orange);">
-      Book Your Free Assessment →
+    <a href="#maintenance" class="btn-primary" style="background: var(--orange);">
+      Book Your Free Maintenance Session →
     </a>
   </div>
 </section>
@@ -1295,7 +1378,7 @@ footer {
   </div>
   <div class="trust-item">
     <span class="trust-icon">📋</span>
-    <span class="trust-text">Free Replacement Assessment</span>
+    <span class="trust-text">Free HVAC Maintenance Session</span>
   </div>
   <div class="trust-item">
     <span class="trust-icon">📍</span>
@@ -1372,7 +1455,7 @@ footer {
       <span class="service-icon">🏗️</span>
       <div class="service-name">AC Unit Installation</div>
       <p class="service-desc">New system installation at a fraction of the big-company price. Properly sized, properly installed, labor warranty included.</p>
-      <a href="#assessment" class="service-cta">Free assessment →</a>
+      <a href="#maintenance" class="service-cta">Free maintenance →</a>
     </div>
     <div class="service-card reveal reveal-delay-2">
       <span class="service-icon">🔥</span>
@@ -1414,7 +1497,7 @@ footer {
             <div class="quote-saved-num">$24k</div>
             <div class="quote-saved-label">Saved</div>
           </div>
-          <div class="quote-who">Tony's quote</div>
+          <div class="quote-who">Synergy's quote</div>
           <div class="quote-amount">
             <span class="quote-sup">$</span>
             <span>7,500</span>
@@ -1425,7 +1508,7 @@ footer {
     </div>
 
     <div class="savings-content reveal reveal-delay-2">
-      <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why Tony Costs Less</p>
+      <p class="about-label" style="color:#7A2D08;font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px;">Why Synergy Costs Less</p>
       <h2 class="savings-headline">
         No showroom.<br>No sales team.<br><span>Just Tony.</span>
       </h2>
@@ -1447,7 +1530,7 @@ footer {
           <div class="why-check">
             <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
-          <div class="why-text"><strong>Free replacement assessment:</strong> Know whether you actually need a new system before you spend a dollar. No charge, no obligation.</div>
+          <div class="why-text"><strong>Complimentary maintenance session:</strong> Get a $200+ value at no cost, understand how your system is performing, and catch issues before they become a surprise.</div>
         </div>
         <div class="why-item">
           <div class="why-check">
@@ -1462,35 +1545,96 @@ footer {
 </section>
 
 <!-- ── ASSESSMENT CTA ─────────────────────────── -->
-<section class="assessment-cta" id="assessment">
-  <div class="assess-label">No Fee. No Obligation. No Pressure.</div>
-  <h2 class="assess-headline">Before You Replace<br>Your HVAC System —<br>Talk to Tony First.</h2>
-  <p class="assess-sub">Tony will come to your home, evaluate your current system, and give you a straight answer about whether you actually need to replace it. If you do, he'll quote the job at a fair price. If you don't, he'll tell you that too.</p>
+<section class="assessment-cta" id="maintenance">
+  <div class="assess-label">For a Limited Time: Complimentary HVAC Maintenance</div>
+  <h2 class="assess-headline">Give Your HVAC System<br>A Checkup Before It<br>Gives You a Problem.</h2>
+  <p class="assess-sub">Book Synergy’s complimentary HVAC maintenance session, a $200+ value. We inspect the components that affect comfort, reliability, and efficiency—then explain what we find in plain English.</p>
 
   <div class="assess-cards">
     <div class="assess-card">
+      <div class="assess-card-num">$200+</div>
+      <div class="assess-card-label">Service value</div>
+    </div>
+    <div class="assess-card">
       <div class="assess-card-num">$0</div>
-      <div class="assess-card-label">Assessment fee</div>
+      <div class="assess-card-label">Your cost</div>
     </div>
     <div class="assess-card">
       <div class="assess-card-num">0%</div>
       <div class="assess-card-label">Sales pressure</div>
     </div>
-    <div class="assess-card">
-      <div class="assess-card-num">100%</div>
-      <div class="assess-card-label">Honest evaluation</div>
-    </div>
   </div>
 
-  <a href="tel:7702928989" class="assess-btn">Call 770-292-8989</a>
-  <a href="#form" class="assess-btn secondary-btn">Request Assessment Online</a>
+  <a href="#form" class="assess-btn">Book Free Maintenance Online</a>
+  <a href="tel:7702928989" class="assess-btn secondary-btn">Call 770-292-8989</a>
+</section>
+
+<section class="maintenance-details" aria-labelledby="maintenance-details-heading">
+  <div class="maintenance-details-inner">
+    <div class="section-header">
+      <p class="section-label dark">More Than a Quick Look-Over</p>
+      <h2 class="section-headline dark" id="maintenance-details-heading">A Real Maintenance Check.<br>Not a Sales Pitch.</h2>
+      <p class="section-sub dark">Your system may look fine right up until the day it cannot keep up. Synergy checks the essentials, explains the findings clearly, and helps you stay ahead of avoidable breakdowns.</p>
+    </div>
+
+    <div class="maintenance-details-grid">
+      <article class="maintenance-item reveal">
+        <div class="maintenance-item-icon">✦</div>
+        <div>
+          <h3 class="maintenance-item-title">Clean the Coils</h3>
+          <p class="maintenance-item-body">Cleaner coils can help your system transfer heat more efficiently, reduce unnecessary strain, and support stronger cooling performance.</p>
+        </div>
+      </article>
+      <article class="maintenance-item reveal reveal-delay-1">
+        <div class="maintenance-item-icon">◈</div>
+        <div>
+          <h3 class="maintenance-item-title">Check Refrigerant Performance</h3>
+          <p class="maintenance-item-body">We check refrigerant operation and key system readings to help identify issues that may contribute to weak airflow, warm air, or longer run times.</p>
+        </div>
+      </article>
+      <article class="maintenance-item reveal reveal-delay-2">
+        <div class="maintenance-item-icon">◉</div>
+        <div>
+          <h3 class="maintenance-item-title">Check the Capacitor</h3>
+          <p class="maintenance-item-body">This component helps critical HVAC parts start and run correctly. Catching a weak capacitor early may help prevent a sudden no-cool or no-heat call.</p>
+        </div>
+      </article>
+      <article class="maintenance-item reveal reveal-delay-3">
+        <div class="maintenance-item-icon">↻</div>
+        <div>
+          <h3 class="maintenance-item-title">Check Blower-Motor Amperage</h3>
+          <p class="maintenance-item-body">Measuring the blower motor’s electrical draw can help identify whether it is working harder than it should, which may affect airflow and reliability.</p>
+        </div>
+      </article>
+      <article class="maintenance-item reveal">
+        <div class="maintenance-item-icon">↔</div>
+        <div>
+          <h3 class="maintenance-item-title">Inspect Airflow &amp; Visible Wear</h3>
+          <p class="maintenance-item-body">A practical look at airflow and visible system condition can reveal comfort issues before they become harder—and more expensive—to ignore.</p>
+        </div>
+      </article>
+      <article class="maintenance-item reveal reveal-delay-1">
+        <div class="maintenance-item-icon">✓</div>
+        <div>
+          <h3 class="maintenance-item-title">Get Straight Answers</h3>
+          <p class="maintenance-item-body">You will know what looks good, what deserves monitoring, and what—if anything—needs attention now. No jargon and no pressure.</p>
+        </div>
+      </article>
+    </div>
+
+    <p class="maintenance-promise">“You are not booking a sales call. You are booking time with a heating and cooling professional who will help you understand the system you already own.”</p>
+    <div class="maintenance-cta-wrap">
+      <a href="#form" class="btn-primary">Claim Your $200+ Complimentary Maintenance Session →</a>
+      <p class="maintenance-terms">Complimentary maintenance session is subject to appointment availability and Synergy Heating &amp; Cooling’s service area. Repairs, parts, refrigerant, and additional services are not included unless separately authorized by the homeowner.</p>
+    </div>
+  </div>
 </section>
 
 <!-- ── ACCOUNTABILITY ─────────────────────────── -->
 <section class="accountability">
   <div class="accountability-inner">
     <div class="section-header" style="text-align:left;">
-      <p class="section-label dark">Tony's Commitment</p>
+      <p class="section-label dark">Our Commitment</p>
       <h2 class="section-headline dark">Three Things Tony<br>Will Always Do.</h2>
     </div>
     <div class="pillars">
@@ -1577,14 +1721,14 @@ footer {
 <!-- ── TESTIMONIALS ───────────────────────────── -->
 <section class="testimonials">
   <div class="section-header">
-    <p class="section-label light">From Tony's Customers</p>
+    <p class="section-label light">From Synergy Customers</p>
     <h2 class="section-headline light">Atlanta Homeowners<br>Who Found Tony First.</h2>
   </div>
   <div class="testimonials-grid">
     <div class="testimonial-card reveal">
       <div class="testimonial-platform">Website</div>
       <div class="testimonial-stars">★★★★★</div>
-      <p class="testimonial-quote">"Very professional and seemed to be very knowledgeable. I would highly recommend Tony's HVAC and Handyman Services."</p>
+      <p class="testimonial-quote">"Very professional and seemed to be very knowledgeable. I would highly recommend Synergy Heating &amp; Cooling."</p>
       <div class="testimonial-author">
         <div class="author-avatar">TM</div>
         <div>
@@ -1623,47 +1767,47 @@ footer {
 <!-- ── FORM ───────────────────────────────────── -->
 <section class="form-section" id="form">
   <div class="form-inner reveal">
-    <div class="form-headline">Request a Quote or Assessment</div>
-    <p class="form-sub">Fill this out and Tony will respond personally — usually same day. Free replacement assessments are always at no charge.</p>
-    <div class="form-row">
-      <div class="form-field">
-        <label>First Name</label>
-        <input type="text" placeholder="Your first name">
+    <div class="form-headline">Reserve Your Free Maintenance Session</div>
+    <p class="form-sub">Choose a time request online for Synergy’s complimentary HVAC maintenance session, a $200+ value. Share a few details and we will confirm availability with you.</p>
+    <form id="maintenance-booking-form" action="#" method="post">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="first-name">First Name</label>
+          <input id="first-name" name="first_name" type="text" placeholder="Your first name" required>
+        </div>
+        <div class="form-field">
+          <label for="last-name">Last Name</label>
+          <input id="last-name" name="last_name" type="text" placeholder="Your last name" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="Best number for appointment confirmation" required>
+        </div>
+        <div class="form-field">
+          <label for="city">City / Neighborhood</label>
+          <input id="city" name="city" type="text" placeholder="Atlanta, Douglasville, etc." required>
+        </div>
       </div>
       <div class="form-field">
-        <label>Last Name</label>
-        <input type="text" placeholder="Your last name">
+        <label for="system-type">What type of system do you have?</label>
+        <select id="system-type" name="system_type" required>
+          <option value="">Select your system...</option>
+          <option>Central Air Conditioning</option>
+          <option>Heat Pump</option>
+          <option>Furnace + Air Conditioner</option>
+          <option>Ductless Mini-Split</option>
+          <option>Not Sure</option>
+        </select>
       </div>
-    </div>
-    <div class="form-row">
       <div class="form-field">
-        <label>Phone</label>
-        <input type="tel" placeholder="Best number to reach you">
+        <label for="details">Anything you have noticed? (Optional)</label>
+        <textarea id="details" name="details" rows="3" placeholder="Warm rooms, weak airflow, unusual sounds, high energy bills, or simply overdue maintenance."></textarea>
       </div>
-      <div class="form-field">
-        <label>City / Neighborhood</label>
-        <input type="text" placeholder="Atlanta, Douglasville, etc.">
-      </div>
-    </div>
-    <div class="form-field">
-      <label>What do you need?</label>
-      <select>
-        <option value="">Select a service...</option>
-        <option>Free HVAC Replacement Assessment</option>
-        <option>AC Repair / Not Cooling</option>
-        <option>AC Installation Quote</option>
-        <option>Heating System Service</option>
-        <option>Seasonal Tune-Up</option>
-        <option>Handyman Services</option>
-        <option>Something Else</option>
-      </select>
-    </div>
-    <div class="form-field">
-      <label>Tell Tony a little more (optional)</label>
-      <textarea rows="3" placeholder="What's going on with your system? Any details help..."></textarea>
-    </div>
-    <button class="form-submit">Send Request — Tony Will Respond Personally</button>
-    <p class="form-note">No bots, no call centers. Tony reads every submission.</p>
+      <button class="form-submit" type="submit">Reserve My Complimentary Maintenance Session</button>
+      <p class="form-note">No pressure to buy repairs. By submitting, you are requesting a complimentary maintenance appointment with Synergy Heating &amp; Cooling. We will contact you to confirm availability.</p>
+    </form>
   </div>
 </section>
 
@@ -1681,21 +1825,21 @@ footer {
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          A legitimate full AC system replacement in Atlanta should run $6,000–$14,000 depending on system size, efficiency rating, and installation complexity. If a company is quoting you $20,000–$35,000, you're either looking at unnecessary upgrades being bundled in, or significant overhead being passed to you. Tony's free assessment will tell you exactly what your home needs and what it should cost.
+          A legitimate full AC system replacement in Atlanta should run $6,000–$14,000 depending on system size, efficiency rating, and installation complexity. If a company is quoting you $20,000–$35,000, you're either looking at unnecessary upgrades being bundled in, or significant overhead being passed to you. Synergy's free assessment will tell you exactly what your home needs and what it should cost.
         </div>
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          How do I know if I need to replace or just repair my AC?
+          Is the complimentary maintenance session really free?
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          The general rule: if your system is under 10 years old and the repair is less than 50% of replacement cost, repair it. If it's over 15 years old, has multiple failing components, or uses R-22 refrigerant (phased out), replacement is usually more economical. But every situation is different — that's exactly what Tony's free replacement assessment is for. He'll give you an honest answer, not a sales pitch.
+          Yes. Synergy’s maintenance session is complimentary, with a stated value of $200+. There is no charge for the scheduled maintenance check itself, and there is no obligation to approve repairs or additional services.
         </div>
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          Why are Tony's prices so much lower than competitors?
+          Why are Synergy's prices so much lower than competitors?
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
@@ -1704,11 +1848,11 @@ footer {
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          What does "free replacement assessment" actually include?
+          What does the complimentary maintenance session include?
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
-          Tony comes to your home, evaluates your current HVAC system's condition, age, efficiency, and remaining lifespan, checks for issues that can be repaired vs. signs of systemic failure, and gives you a clear recommendation: repair, maintain, or replace. If replacement makes sense, he'll quote the job on the spot. The assessment itself is always free, with no obligation to use Tony for the work.
+          Synergy checks the key areas that affect comfort and reliability, including coil condition, refrigerant performance, capacitor condition, blower-motor amperage, airflow, and visible wear. You will receive a plain-English explanation of what looks good, what deserves monitoring, and what—if anything—needs attention.
         </div>
       </div>
       <div class="faq-item">
@@ -1722,7 +1866,7 @@ footer {
       </div>
       <div class="faq-item">
         <div class="faq-question" onclick="toggleFaq(this)">
-          What is the labor warranty on Tony's work?
+          What is the labor warranty on Synergy's work?
           <div class="faq-arrow">▾</div>
         </div>
         <div class="faq-answer">
@@ -1739,10 +1883,10 @@ footer {
     <h2 class="final-headline">
       Get the Quote<br>You Actually<br><span>Deserve.</span>
     </h2>
-    <p class="final-sub">Before you sign anything with a big HVAC company, get Tony's honest assessment. Free, no pressure, and it could save you tens of thousands of dollars.</p>
+    <p class="final-sub">Get a clear picture of your system before the next heat wave or cold snap. Synergy’s complimentary maintenance session is a $200+ value, with no pressure to buy repairs.</p>
     <div class="final-cta-group">
       <a href="#form" class="assess-btn" style="background:var(--orange);border:none;">
-        Book Free Assessment →
+        Book Free Maintenance →
       </a>
       <a href="#form" class="assess-btn secondary-btn" style="background:transparent;border:2px solid rgba(255,255,255,0.3);color:var(--white);">
         Get a Service Quote →
@@ -1758,9 +1902,8 @@ footer {
 <!-- ── FOOTER ─────────────────────────────────── -->
 <footer>
   <div>
-    <div class="footer-brand-name">Tony's HVAC & Handyman</div>
-    <div class="footer-brand-sub">Atlanta Metropolitan Area</div>
-    <p class="footer-body">Licensed HVAC technician, active industry instructor, and Atlanta's most affordable full-service HVAC and handyman contractor. Serving the metro Atlanta area for 10+ years.</p>
+    <img class="footer-logo" src="synergy-heating-cooling-logo.png" alt="Synergy Heating &amp; Cooling">
+    <p class="footer-body">Licensed HVAC technician, active industry instructor, and full-service heating and cooling contractor serving the Atlanta metropolitan area.</p>
     <p class="footer-body" style="margin-top:12px;">
       <a href="tel:7702928989" style="color:var(--amber);text-decoration:none;font-weight:600;">770-292-8989</a><br>
       <a href="mailto:tonymurphy29128@gmail.com" style="color:rgba(255,255,255,0.4);text-decoration:none;font-size:13px;">tonymurphy29128@gmail.com</a>
@@ -1779,7 +1922,7 @@ footer {
   <div>
     <div class="footer-heading">Quick Links</div>
     <ul class="footer-links">
-      <li><a href="#assessment">Free Assessment</a></li>
+      <li><a href="#maintenance">Free Maintenance</a></li>
       <li><a href="#form">Get a Quote</a></li>
       <li><a href="tel:7702928989">Call Tony</a></li>
     </ul>
@@ -1792,7 +1935,7 @@ footer {
   </div>
 </footer>
 <div class="footer-bottom">
-  <span>© 2026 Tony's HVAC & Handyman Services — Atlanta, GA</span>
+  <span>© 2026 Synergy Heating &amp; Cooling — Atlanta, GA</span>
   <span>770-292-8989</span>
 </div>
 
@@ -1817,13 +1960,19 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.12 });
 reveals.forEach(r => observer.observe(r));
 
-// Form submit (demo)
-const formBtn = document.querySelector('.form-submit');
-if (formBtn) {
-  formBtn.addEventListener('click', function() {
-    this.textContent = '✓ Sent — Tony will be in touch soon.';
-    this.style.background = '#1D9E75';
-    this.disabled = true;
+// Maintenance booking request
+const maintenanceBookingForm = document.querySelector('#maintenance-booking-form');
+if (maintenanceBookingForm) {
+  maintenanceBookingForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (!maintenanceBookingForm.checkValidity()) {
+      maintenanceBookingForm.reportValidity();
+      return;
+    }
+    const formBtn = maintenanceBookingForm.querySelector('.form-submit');
+    formBtn.textContent = '✓ Request Received — Synergy Will Confirm Availability';
+    formBtn.style.background = '#1D9E75';
+    formBtn.disabled = true;
   });
 }
 </script>

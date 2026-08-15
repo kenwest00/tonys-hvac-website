@@ -1,47 +1,57 @@
-# Tony's HVAC & Handyman — Website
+# Synergy Heating & Cooling — Website
 
 **Live site:** `index.html`
 
-A high-converting, single-file HTML website for Tony's HVAC & Handyman Services, serving the Atlanta metropolitan area.
+A high-converting, single-file HTML website for **Synergy Heating & Cooling**, serving the Atlanta metropolitan area.
 
-## What's in this repo
+## What’s in this repository
 
 | File | Description |
 |---|---|
-| `index.html` | Full production website — all HTML, CSS, and JS in one file |
-| `tonys-hvac-growth-blueprint.docx` | Full 8-pillar growth strategy document |
-| `README.md` | This file |
+| `index.html` | Full production website with all HTML, CSS, and JavaScript in one file |
+| `synergy-heating-cooling-logo.png` | Cropped web-ready Synergy Heating & Cooling brand logo |
+| `hero.png` | Atlanta-area HVAC hero image |
+| `tonys-hvac-growth-blueprint.docx` | Original growth strategy reference document |
+| `README.md` | Project overview and implementation notes |
 
 ## Site sections
 
-- **Hero** — dual-track (emergency call vs. replacement research), $32K vs $7.5K savings story
-- **Trust bar** — 5 core credentials including HVAC instructor status
-- **About Tony** — instructor background, 10+ years, stats
-- **Services** — AC repair, installation, heating, handyman
-- **Savings section** — quote comparison with accountability pillars
-- **Free replacement assessment** — dedicated CTA section
-- **Seasonal CTAs** — summer AC and winter heating split band
-- **Instructor section** — credibility and quote
-- **Testimonials** — Thelma M., Jessica M., anonymized savings story
-- **Contact form** — service request with GHL integration point
-- **FAQ** — SEO + GEO optimized answers in Tony's voice
+| Section | Purpose |
+|---|---|
+| Hero | Separates urgent service callers from visitors who want to research savings and system care |
+| Trust bar | Communicates key credentials and service benefits |
+| About the owner | Introduces Tony’s HVAC instructor background and experience |
+| Services | Covers AC repair, installation, heating, maintenance, and handyman services |
+| Savings section | Explains Synergy’s direct-service value proposition and quote-comparison story |
+| Complimentary maintenance offer | Promotes an online-bookable HVAC maintenance session with a $200+ stated value |
+| Maintenance details | Explains coil cleaning, refrigerant-performance checks, capacitor checks, blower-motor amperage checks, airflow review, and plain-English findings |
+| Accountability and instructor sections | Builds trust through transparent customer commitments and expertise |
+| Testimonials, FAQ, and contact area | Supports conversion and answers common customer questions |
 
-## To customize
+## Online maintenance booking
 
-1. Replace the `About Tony` photo placeholder with a real photo of Tony on a job
-2. Connect the contact form `action` to your GoHighLevel form endpoint
-3. Add real Google Reviews embed once 10+ reviews are live
-4. Update the technical college name in the instructor section
-5. Add Google Analytics or your preferred tracking script before `</head>`
+The online maintenance booking area has client-side required-field validation and displays a confirmation state after a visitor submits a complete request. To receive production leads, connect the form identified by `maintenance-booking-form` to a secure form endpoint or CRM workflow. The present form intentionally does not transmit customer data until that endpoint is configured.
 
-## Tech
+## Customization priorities
 
-Plain HTML/CSS/JS — no build tools, no dependencies, no framework.
-Fonts loaded from Google Fonts (Bebas Neue, Outfit, DM Serif Display).
+| Priority | Next change |
+|---|---|
+| 1 | Connect the maintenance booking form to the preferred CRM or lead-management endpoint |
+| 2 | Confirm the exact complimentary maintenance scope, eligibility, service-area limits, and terms before launch |
+| 3 | Replace the About visual placeholder with real photography of Tony and completed work |
+| 4 | Add verified Google Reviews or another independently verifiable review source |
+| 5 | Add analytics and conversion tracking before paid promotion |
+
+## Technology
+
+The site is plain HTML, CSS, and JavaScript. It does not require a build process, framework, or third-party runtime dependency. Google Fonts provides Bebas Neue, Outfit, and DM Serif Display.
 
 ## Contact
 
-Tony's HVAC & Handyman Services  
-Atlanta Metropolitan Area  
-770-292-8989  
-tonyshvachandymanservices.com
+**Synergy Heating & Cooling**
+
+Atlanta Metropolitan Area
+
+770-292-8989
+
+tonymurphy29128@gmail.com
