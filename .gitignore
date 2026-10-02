@@ -3,3 +3,6 @@ Thumbs.db
 *.tmp
 node_modules/
 .env
+
+# raw phone photos (HEIC originals may carry GPS data)
+HEIC-to-jpg/
