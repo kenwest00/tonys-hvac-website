@@ -2130,9 +2130,14 @@ footer {
 <section class="form-section" id="form">
   <div class="form-inner reveal">
     <div class="form-headline">Request Your Complimentary Maintenance Session</div>
-    <p class="form-sub">Synergy’s complimentary HVAC maintenance session is a $200+ stated value. Secure online request delivery is still being connected; for the fastest confirmed response, call or text 770-292-8989.</p>
-    <form id="maintenance-booking-form" action="#" method="post" data-formspree-endpoint="">
-      <input type="hidden" name="_subject" value="New Synergy HVAC Maintenance Request">
+    <p class="form-sub">Synergy’s complimentary HVAC maintenance session is a $200+ stated value. Send your request below, or for the fastest confirmed response, call or text 770-292-8989.</p>
+    <form id="maintenance-booking-form" action="https://api.web3forms.com/submit" method="post">
+      <!-- Web3Forms public access key (safe to expose; it only allows sending to the owner's inbox) -->
+      <input type="hidden" name="access_key" value="8cb5d52c-ce15-4820-a2a6-80d79f58d2ef">
+      <input type="hidden" name="subject" value="New Synergy HVAC Maintenance Request">
+      <input type="hidden" name="from_name" value="Synergy Website">
+      <!-- Spam honeypot: real visitors never see or tick this -->
+      <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" style="display:none">
       <div class="form-row">
         <div class="form-field">
           <label for="first-name">First Name</label>
@@ -2169,7 +2174,7 @@ footer {
         <textarea id="details" name="details" rows="3" placeholder="Warm rooms, weak airflow, unusual sounds, high energy bills, or simply overdue maintenance."></textarea>
       </div>
       <button class="form-submit" type="submit">Request My Complimentary Maintenance Session</button>
-      <p class="form-note">No pressure to buy repairs. <strong>Booking delivery placeholder:</strong> an online lead endpoint still needs to be connected before this request can be delivered. For immediate assistance, call or text 770-292-8989.</p>
+      <p class="form-note">No pressure to buy repairs. For immediate assistance, call or text 770-292-8989.</p>
       <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
     </form>
   </div>
@@ -2343,7 +2348,7 @@ document.querySelectorAll('a[href="tel:7702928989"]').forEach(link => {
   link.addEventListener('click', () => trackEvent('phone_click', { link_url: link.href }));
 });
 
-// Maintenance booking request. Add the Formspree endpoint to data-formspree-endpoint before launch.
+// Maintenance booking request, delivered through Web3Forms (set the access_key hidden field in the form).
 const maintenanceBookingForm = document.querySelector('#maintenance-booking-form');
 if (maintenanceBookingForm) {
   const formBtn = maintenanceBookingForm.querySelector('.form-submit');
@@ -2362,8 +2367,9 @@ if (maintenanceBookingForm) {
       return;
     }
 
-    const endpoint = maintenanceBookingForm.dataset.formspreeEndpoint.trim();
-    if (!endpoint) {
+    const endpoint = maintenanceBookingForm.action;
+    const accessKey = maintenanceBookingForm.elements.access_key.value.trim();
+    if (!accessKey) {
       showFormStatus('error', 'Online booking is being connected. Please call 770-292-8989 to reserve your maintenance session today.');
       trackEvent('form_submit_error', { reason: 'form_endpoint_not_configured' });
       return;
@@ -2379,7 +2385,8 @@ if (maintenanceBookingForm) {
         body: new FormData(maintenanceBookingForm),
         headers: { 'Accept': 'application/json' }
       });
-      if (!response.ok) throw new Error('Form submission failed');
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result.success === false) throw new Error('Form submission failed');
 
       maintenanceBookingForm.reset();
       formBtn.textContent = '✓ Request Received — Synergy Will Confirm Availability';
